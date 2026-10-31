@@ -1218,7 +1218,7 @@
       "ruleAr": "لا يتطلب صيام — يمكن إجراؤه في أي وقت",
       "ruleEn": "No fasting needed",
       "icon": "🩸",
-      "price": ""
+      "price": "-"
     },
     {
       "id": 2,
@@ -1228,7 +1228,7 @@
       "ruleAr": "صيام 8 – 12 ساعة مع السماح بشرب الماء",
       "ruleEn": "Fast 8–12 hours, water allowed",
       "icon": "🧪",
-      "price": "80"
+      "price": "-"
     },
     {
       "id": 3,
@@ -1238,7 +1238,7 @@
       "ruleAr": "لا يتطلب صيام — يعكس متوسط السكر لـ 3 شهور",
       "ruleEn": "No fasting — reflects 3-month average",
       "icon": "📊",
-      "price": ""
+      "price": "-"
     },
     {
       "id": 4,
@@ -1248,7 +1248,7 @@
       "ruleAr": "لا يتطلب صيام — يُفضل معه تسجيل وقت آخر وجبة",
       "ruleEn": "No fasting — note last meal time",
       "icon": "🍬",
-      "price": ""
+      "price": "-"
     },
     {
       "id": 5,
@@ -1258,7 +1258,7 @@
       "ruleAr": "يُسحب بعد ساعتين بالضبط من بداية الأكل",
       "ruleEn": "Sample taken exactly 2h after meal",
       "icon": "⏱️",
-      "price": "70"
+      "price": "-"
     },
     {
       "id": 6,
@@ -1268,7 +1268,7 @@
       "ruleAr": "صيام 6 – 8 ساعات",
       "ruleEn": "Fast 6–8 hours",
       "icon": "🫀",
-      "price": ""
+      "price": "-"
     },
     {
       "id": 7,
@@ -1278,7 +1278,7 @@
       "ruleAr": "لا يتطلب صيام — يُفضل شرب ماء جيد قبل السحب",
       "ruleEn": "No fasting — stay well hydrated",
       "icon": "💧",
-      "price": "200"
+      "price": "-"
     },
     {
       "id": 8,
@@ -1798,5 +1798,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:42:09.934Z"
+  "updatedAt": "2026-10-31T18:45:20.415Z"
 }
