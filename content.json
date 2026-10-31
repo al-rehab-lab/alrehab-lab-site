@@ -221,7 +221,7 @@
       "en": "Precision diagnostics with exceptional care"
     },
     "top.trusted": {
-      "ar": "معمل معتمد — نتائج موثوقة",
+      "ar": "معامل معتمدة — نتائج موثوقة",
       "en": "Accredited lab — trusted results"
     },
     "footer.desc": {
@@ -273,7 +273,7 @@
       "en": "Follow us"
     },
     "home.badge": {
-      "ar": "معمل تحاليل طبية معتمد — الشرقية",
+      "ar": "معامل تحاليل طبية معتمد — العاشر من رمضان  - بلبيس - الشرقية",
       "en": "Accredited medical lab — Sharqia"
     },
     "home.title1": {
@@ -1798,5 +1798,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:26:57.966Z"
+  "updatedAt": "2026-10-31T18:37:22.916Z"
 }
