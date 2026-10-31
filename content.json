@@ -8,8 +8,8 @@
     "sloganEn": "Your Health Is Your Crown",
     "phone": "201067571874",
     "phoneDisplay": "0106 757 1874",
-    "landline": "",
-    "email": "info@alrehablab.com",
+    "landline": "+0552970038",
+    "email": "alrehablab01@gmail.com",
     "replyTime": "نرد على الرسائل خلال 24 ساعة",
     "formspreeId": "xvkkbjgp",
     "feedbackEmail": "info@alrehablab.com",
@@ -26,18 +26,18 @@
         "id": "sandanhour",
         "ar": "فرع سندنهور — بلبيس",
         "en": "Sandanhour Branch — Belbeis",
-        "addressAr": "سندنهور، مركز بلبيس، محافظة الشرقية",
+        "addressAr": "سندنهور امام الوحدة الصحية ، مركز بلبيس",
         "addressEn": "Sandanhour, Belbeis, Sharqia",
-        "map": "https://maps.google.com/?q=Sandanhour+Belbeis",
+        "map": "https://maps.app.goo.gl/xQj43iPCbivYdpCz6",
         "phone": "201067571874"
       },
       {
         "id": "tenth",
         "ar": "فرع العاشر من رمضان",
         "en": "10th of Ramadan Branch",
-        "addressAr": "جهاز مدينة العاشر من رمضان — محافظة الشرقية",
+        "addressAr": "الاردنية - امام نادي المهندسين - مول سيتي سنتر - برج 8 - الدور الاول علوي",
         "addressEn": "10th of Ramadan City, Sharqia",
-        "map": "https://maps.app.goo.gl/G1QKeu4Vuesri1fH8",
+        "map": "https://maps.app.goo.gl/5VMJ3RRpbXyAYYmR6",
         "phone": "201067571874"
       }
     ],
@@ -1795,5 +1795,6 @@
         "a": "Yes. We have agreements with government bodies, industrial-zone companies and sports clubs offering up to 25% off for employees and families. See the contracts page."
       }
     }
-  ]
+  ],
+  "updatedAt": "2026-10-31T12:57:00.787Z"
 }
