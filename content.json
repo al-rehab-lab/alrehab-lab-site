@@ -1714,13 +1714,14 @@
     },
     {
       "id": 4,
-      "ar": "المصالح الحكومية والأجهزة التنفيذية",
-      "en": "Government Services & Executive Bodies",
+      "ar": "نقابة المهندسين",
+      "en": "Engineers Syndicate",
       "group": "government",
-      "detailAr": "تعاقدات موحدة لفحوصات العاملين وفق اشتراطات الجهة.",
+      "detailAr": "",
       "detailEn": "Structured staff-screening agreements per authority requirements.",
-      "discount": "خصم خاص",
-      "mark": "🏢"
+      "discount": "25%",
+      "mark": "🏢",
+      "logo": "assets/uploads/1793469929820-logo_03_almassriya.png"
     }
   ],
   "contractGroups": [
@@ -1797,5 +1798,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:25:11.191Z"
+  "updatedAt": "2026-10-31T18:26:57.966Z"
 }
