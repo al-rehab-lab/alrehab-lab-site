@@ -122,10 +122,8 @@
     });
     $$('[data-tel]').forEach(el => {
       el.href = telUrl();
-      if (el.dataset.tel === 'label') {
-        const span = el.querySelector('[data-phone-label]');
-        if (span) span.textContent = CFG.phoneDisplay;
-      }
+      const span = el.querySelector('[data-phone-label]');
+      if (span) span.textContent = CFG.phoneDisplay;
     });
     $$('[data-mail]').forEach(el => {
       el.href = 'mailto:' + CFG.email;
@@ -459,10 +457,13 @@
   const contractsState = { group: 'all' };
   function contractCard(c) {
     const markClass = c.group === 'government' ? '' : c.group === 'corporate' ? 'logo-chip__mark--blue' : 'logo-chip__mark--red';
+    const markInner = c.logo
+      ? `<img src="${c.logo}" alt="" style="width:100%;height:100%;object-fit:contain;border-radius:9px;background:#fff">`
+      : c.mark;
     return `
       <article class="card card--hover" data-reveal>
         <div class="flex items-center gap-12 mb-16">
-          <div class="logo-chip__mark ${markClass}" aria-hidden="true">${c.mark}</div>
+          <div class="logo-chip__mark ${markClass}" aria-hidden="true">${markInner}</div>
           <div>
             <h3 style="font-size:15px">${pick({ ar: c.ar, en: c.en })}</h3>
             <small class="text-muted text-xs">${pick(LAB.contractGroups.find(g => g.id === c.group) || { ar: '', en: '' })}</small>
@@ -517,6 +518,24 @@
     document.addEventListener('lang:changed', () => {
       $$('.faq__item.is-open .faq__panel').forEach(p => { p.style.maxHeight = p.scrollHeight + 'px'; });
     });
+  }
+
+  /* ------------------------------------------------------------------ *
+   * الأرقام في البانر (تُقرأ من المحتوى)
+   * ------------------------------------------------------------------ */
+  function renderHeroStats() {
+    const wrap = $('[data-hero-stats]');
+    if (!wrap) return;
+    const list = (CFG.stats && CFG.stats.length) ? CFG.stats : [];
+    wrap.innerHTML = list.map(s => {
+      const raw = String(s.value || '0');
+      const digits = raw.replace(/[^\d]/g, '');
+      const prefix = raw.trim().startsWith('+') ? '+' : '';
+      return `<div class="hero__stat">
+        <b data-count-to="${prefix}${digits}">${pick({ ar: s.value, en: s.value })}</b>
+        <span>${pick({ ar: s.ar, en: s.en })}</span>
+      </div>`;
+    }).join('');
   }
 
   /* ------------------------------------------------------------------ *
@@ -586,9 +605,16 @@
     const form = $('#feedbackForm');
     if (!form) return;
 
-    // channel availability
-    const channels = $$('[data-channel]', form);
-    const directName = CFG.formspreeId ? 'direct' : null;
+    // channel availability — يظهر «الإرسال المباشر» فقط لو فيه Formspree ID
+    const directOpt = form.querySelector('[data-channel-opt="direct"]');
+    if (directOpt && !CFG.formspreeId) {
+      directOpt.remove();
+      const first = form.querySelector('input[name="channel"]');
+      if (first) first.checked = true;
+    } else if (directOpt && CFG.formspreeId) {
+      const directInput = directOpt.querySelector('input[name="channel"]');
+      if (directInput) directInput.checked = true;
+    }
 
     const anon = form.querySelector('[data-anon]');
     const nameWrap = form.querySelector('[data-contact-fields]');
@@ -673,7 +699,8 @@
           setStatus(t('fb.mustChoose'), 'warn');
         }
       } catch (err) {
-        setStatus('⚠️ ' + t('fb.err') + ' <a href="' + waUrl(buildFeedbackMessage(entry)) + '" target="_blank" rel="noopener" style="text-decoration:underline">' + t('common.whatsapp') + '</a>', 'warn');
+        const wa = waUrl(buildFeedbackMessage(entry));
+        setStatus('⚠️ ' + t('fb.err') + ' <a href="' + wa + '" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:900">' + t('fb.errWa') + '</a>', 'warn');
       } finally {
         if (submitBtn) submitBtn.disabled = false;
         renderRecentFeedback();
@@ -808,6 +835,7 @@
     initContracts();
     initFaq();
     renderBranches();
+    renderHeroStats();
     initFeedbackForm();
     initVisitForm();
     initMisc();
@@ -823,14 +851,20 @@
     document.addEventListener('lang:changed', () => {
       hydrateLinks();
       renderBranches();
+      renderHeroStats();
       renderRecentFeedback();
     });
   }
 
+  function start() {
+    // نحاول تحميل المحتوى المعدّل من لوحة التحكم، وبعدها نشغّل الموقع
+    Promise.resolve(LAB.loadContent ? LAB.loadContent() : false).then(() => boot());
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
+    document.addEventListener('DOMContentLoaded', start);
   } else {
-    boot();
+    start();
   }
 
   // expose

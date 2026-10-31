@@ -27,9 +27,9 @@ LAB.config = {
                  (شكل الرابط: https://formspree.io/f/xxxxxxx)
      email     : يفتح برنامج البريد على جهاز الزائر برسالة جاهزة
   */
-  formspreeId: '',                    // ✏️ مثال: 'xnqkabcd'
+  formspreeId: 'xvkkbjgp',             // Formspree endpoint: https://formspree.io/f/xvkkbjgp
   feedbackEmail: 'info@alrehablab.com',
-  feedbackPrefChannel: 'whatsapp',   // القناة المفضلة: whatsapp | formspree | email
+  feedbackPrefChannel: 'direct',     // القناة المفضلة: direct (Formspree) | whatsapp | email
 
   hours: 'يومياً من 8:00 صباحاً حتى 11:00 مساءً',
   whatsappChannel: 'https://www.whatsapp.com/channel/0029VaGPkWY7dmeabVb6Ci3n',

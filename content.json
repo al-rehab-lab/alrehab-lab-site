@@ -1,0 +1,1799 @@
+{
+  "config": {
+    "nameAr": "معامل الرحاب",
+    "nameEn": "AL Rehab Medical Lab",
+    "fullAr": "معامل الرحاب للتحاليل الطبية",
+    "fullEn": "AL Rehab Medical Lab",
+    "sloganAr": "صحتك تاجك",
+    "sloganEn": "Your Health Is Your Crown",
+    "phone": "201067571874",
+    "phoneDisplay": "0106 757 1874",
+    "landline": "",
+    "email": "info@alrehablab.com",
+    "replyTime": "نرد على الرسائل خلال 24 ساعة",
+    "formspreeId": "xvkkbjgp",
+    "feedbackEmail": "info@alrehablab.com",
+    "feedbackPrefChannel": "direct",
+    "hours": "يومياً من 8:00 صباحاً حتى 11:00 مساءً",
+    "whatsappChannel": "https://www.whatsapp.com/channel/0029VaGPkWY7dmeabVb6Ci3n",
+    "socials": {
+      "facebook": "https://www.facebook.com/1alrehablab/",
+      "instagram": "https://www.instagram.com/al_rehab_lab",
+      "youtube": "https://www.youtube.com/@1alrehablab"
+    },
+    "branches": [
+      {
+        "id": "sandanhour",
+        "ar": "فرع سندنهور — بلبيس",
+        "en": "Sandanhour Branch — Belbeis",
+        "addressAr": "سندنهور، مركز بلبيس، محافظة الشرقية",
+        "addressEn": "Sandanhour, Belbeis, Sharqia",
+        "map": "https://maps.google.com/?q=Sandanhour+Belbeis",
+        "phone": "201067571874"
+      },
+      {
+        "id": "tenth",
+        "ar": "فرع العاشر من رمضان",
+        "en": "10th of Ramadan Branch",
+        "addressAr": "جهاز مدينة العاشر من رمضان — محافظة الشرقية",
+        "addressEn": "10th of Ramadan City, Sharqia",
+        "map": "https://maps.app.goo.gl/G1QKeu4Vuesri1fH8",
+        "phone": "201067571874"
+      }
+    ],
+    "stats": [
+      {
+        "value": "+25",
+        "ar": "سنة خبرة في التحاليل الطبية",
+        "en": "Years of lab experience"
+      },
+      {
+        "value": "+120",
+        "ar": "نوع تحليل متاح",
+        "en": "Test types available"
+      },
+      {
+        "value": "+45",
+        "ar": "جهة وشركة متعاقدة",
+        "en": "Corporate partners"
+      }
+    ]
+  },
+  "i18n": {
+    "brand.prefix": {
+      "ar": "معامل",
+      "en": "AL"
+    },
+    "brand.name": {
+      "ar": "الرحـاب",
+      "en": "Rehab"
+    },
+    "brand.en": {
+      "ar": "AL REHAB MEDICAL LAB",
+      "en": "MEDICAL LAB"
+    },
+    "brand.full": {
+      "ar": "معامل الرحاب للتحاليل الطبية",
+      "en": "AL Rehab Medical Lab"
+    },
+    "common.hours": {
+      "ar": "يومياً 8:00 ص — 11:00 م",
+      "en": "Daily 8:00 AM – 11:00 PM"
+    },
+    "common.hoursLabel": {
+      "ar": "مواعيد العمل",
+      "en": "Working hours"
+    },
+    "common.callNow": {
+      "ar": "اتصل بنا",
+      "en": "Call us"
+    },
+    "common.whatsapp": {
+      "ar": "واتساب",
+      "en": "WhatsApp"
+    },
+    "common.bookVisit": {
+      "ar": "اطلب زيارة منزلية",
+      "en": "Book a home visit"
+    },
+    "common.callLab": {
+      "ar": "اتصال مباشر بالمعمل",
+      "en": "Call the lab"
+    },
+    "common.directions": {
+      "ar": "الموقع على الخريطة",
+      "en": "Get directions"
+    },
+    "common.details": {
+      "ar": "التفاصيل",
+      "en": "Details"
+    },
+    "common.close": {
+      "ar": "إغلاق",
+      "en": "Close"
+    },
+    "common.send": {
+      "ar": "إرسال",
+      "en": "Send"
+    },
+    "common.optional": {
+      "ar": "اختياري",
+      "en": "Optional"
+    },
+    "common.required": {
+      "ar": "مطلوب",
+      "en": "Required"
+    },
+    "common.all": {
+      "ar": "الكل",
+      "en": "All"
+    },
+    "common.backHome": {
+      "ar": "العودة للرئيسية",
+      "en": "Back to home"
+    },
+    "common.home": {
+      "ar": "الرئيسية",
+      "en": "Home"
+    },
+    "common.results": {
+      "ar": "نتيجة",
+      "en": "results"
+    },
+    "common.search": {
+      "ar": "بحث",
+      "en": "Search"
+    },
+    "common.top": {
+      "ar": "أعلى الصفحة",
+      "en": "Back to top"
+    },
+    "common.lang": {
+      "ar": "English",
+      "en": "العربية"
+    },
+    "common.langLabel": {
+      "ar": "تغيير اللغة",
+      "en": "Switch language"
+    },
+    "common.themeLabel": {
+      "ar": "الوضع الليلي",
+      "en": "Dark mode"
+    },
+    "common.menu": {
+      "ar": "القائمة",
+      "en": "Menu"
+    },
+    "common.skip": {
+      "ar": "تخطَّ إلى المحتوى",
+      "en": "Skip to content"
+    },
+    "common.egp": {
+      "ar": "ج.م",
+      "en": "EGP"
+    },
+    "common.priceFrom": {
+      "ar": "يبدأ من",
+      "en": "From"
+    },
+    "common.openMap": {
+      "ar": "فتح الخريطة",
+      "en": "Open map"
+    },
+    "nav.home": {
+      "ar": "الرئيسية",
+      "en": "Home"
+    },
+    "nav.tests": {
+      "ar": "دليل التحاليل",
+      "en": "Test guide"
+    },
+    "nav.visits": {
+      "ar": "السحب المنزلي",
+      "en": "Home visits"
+    },
+    "nav.gallery": {
+      "ar": "تصاميم التوعية",
+      "en": "Awareness"
+    },
+    "nav.tips": {
+      "ar": "النصائح الطبية",
+      "en": "Health tips"
+    },
+    "nav.contracts": {
+      "ar": "التعاقدات",
+      "en": "Contracts"
+    },
+    "nav.feedback": {
+      "ar": "الآراء والشكاوى",
+      "en": "Feedback"
+    },
+    "nav.contact": {
+      "ar": "تواصل معنا",
+      "en": "Contact"
+    },
+    "nav.more": {
+      "ar": "المزيد",
+      "en": "More"
+    },
+    "top.tagline": {
+      "ar": "دقة متناهية في التشخيص.. وعناية فائقة بصحتك",
+      "en": "Precision diagnostics with exceptional care"
+    },
+    "top.trusted": {
+      "ar": "معمل معتمد — نتائج موثوقة",
+      "en": "Accredited lab — trusted results"
+    },
+    "footer.desc": {
+      "ar": "معامل الرحاب للتحاليل الطبية: دقة في النتائج، تعقيم كامل، وفريق تمريض متخصص لسحب العينات في المعمل أو على باب منزلك.",
+      "en": "AL Rehab Medical Lab: precise results, full sterilisation and a specialised nursing team — at the lab or at your door."
+    },
+    "footer.quick": {
+      "ar": "روابط سريعة",
+      "en": "Quick links"
+    },
+    "footer.services": {
+      "ar": "خدماتنا",
+      "en": "Our services"
+    },
+    "footer.contact": {
+      "ar": "تواصل معنا",
+      "en": "Contact us"
+    },
+    "footer.rights": {
+      "ar": "جميع الحقوق محفوظة",
+      "en": "All rights reserved"
+    },
+    "footer.privacy": {
+      "ar": "سياسة الخصوصية",
+      "en": "Privacy policy"
+    },
+    "footer.terms": {
+      "ar": "شروط الاستخدام",
+      "en": "Terms of use"
+    },
+    "footer.disclaimer": {
+      "ar": "المحتوى التوعوي على الموقع لا يُغني عن استشارة الطبيب المختص.",
+      "en": "Educational content on this site does not replace professional medical advice."
+    },
+    "footer.visitSvc": {
+      "ar": "السحب المنزلي",
+      "en": "Home collection"
+    },
+    "footer.testsDir": {
+      "ar": "دليل التحاليل",
+      "en": "Test directory"
+    },
+    "footer.corp": {
+      "ar": "تعاقدات الشركات",
+      "en": "Corporate contracts"
+    },
+    "footer.social": {
+      "ar": "تابعنا",
+      "en": "Follow us"
+    },
+    "home.badge": {
+      "ar": "معمل تحاليل طبية معتمد — الشرقية",
+      "en": "Accredited medical lab — Sharqia"
+    },
+    "home.title1": {
+      "ar": "دقة متناهية في التشخيص",
+      "en": "Precision you can trust"
+    },
+    "home.title2": {
+      "ar": "ورعاية طبية تصل إلى باب منزلك",
+      "en": "Care that reaches your door"
+    },
+    "home.desc": {
+      "ar": "نوفر لك ولأسرتك كل الفحوصات الطبية بأعلى معايير الجودة العالمية، مع فريق تمريض مجهز لسحب العينات في المعمل أو في منزلك — بأمان تام وبأسعار واضحة.",
+      "en": "We provide every medical test you and your family need to international quality standards, with a fully equipped nursing team — at the lab or at home, safely and with clear pricing."
+    },
+    "home.cta1": {
+      "ar": "ابحث عن تحليلك",
+      "en": "Find your test"
+    },
+    "home.cta2": {
+      "ar": "احجز سحب منزلي",
+      "en": "Book home collection"
+    },
+    "home.sloganAlt": {
+      "ar": "صحتك تاجك",
+      "en": "Your health is your crown"
+    },
+    "home.pill1": {
+      "ar": "نتائج خلال 24 ساعة",
+      "en": "Results within 24h"
+    },
+    "home.pill2": {
+      "ar": "سحب منزلي",
+      "en": "Home visits"
+    },
+    "home.pill3": {
+      "ar": "سحب بدون ألم",
+      "en": "Painless draw"
+    },
+    "trust.accredited": {
+      "ar": "أجهزة معايرة يومياً",
+      "en": "Daily-calibrated analysers"
+    },
+    "trust.team": {
+      "ar": "فريق تمريض متخصص",
+      "en": "Specialised nursing team"
+    },
+    "trust.home": {
+      "ar": "سحب منزلي لكل الأعمار",
+      "en": "Home collection for all ages"
+    },
+    "trust.confidential": {
+      "ar": "سرية تامة للنتائج",
+      "en": "Confidential results"
+    },
+    "trust.hours": {
+      "ar": "مفتوح حتى 11 مساءً",
+      "en": "Open until 11 PM"
+    },
+    "home.servicesBadge": {
+      "ar": "لماذا معامل الرحاب",
+      "en": "Why AL Rehab"
+    },
+    "home.servicesTitle": {
+      "ar": "خدمة معملية كاملة من أول التحليل لحد النتيجة",
+      "en": "A complete lab service, from sample to result"
+    },
+    "home.servicesDesc": {
+      "ar": "أربع ركائز نعمل بها كل يوم لضمان أن كل رقم في تقريرك يكون صحيحاً وموثوقاً.",
+      "en": "Four pillars we work by every day so every number in your report is accurate and dependable."
+    },
+    "home.s1.title": {
+      "ar": "دقة النتائج",
+      "en": "Accurate results"
+    },
+    "home.s1.desc": {
+      "ar": "معايرة يومية للأجهزة ومراجعة داخلية للنتائج غير الطبيعية قبل إصدار التقرير، لضمان قراءة يمكن للطبيب الاعتماد عليها.",
+      "en": "Daily calibration and an internal review of every abnormal result before the report is released."
+    },
+    "home.s2.title": {
+      "ar": "السحب المنزلي",
+      "en": "Home collection"
+    },
+    "home.s2.desc": {
+      "ar": "فريق تمريض مجهز بالكامل يزورك في الموعد المتفق عليه، ويتعامل باحتراف مع كبار السن والأطفال والحالات الخاصة.",
+      "en": "A fully equipped nursing team arrives at your agreed time, professionally handling older adults, children and special cases."
+    },
+    "home.s3.title": {
+      "ar": "تعقيم وأمان",
+      "en": "Safety & sterilisation"
+    },
+    "home.s3.desc": {
+      "ar": "إبر وأدوات استخدام واحد، تعقيم كامل لسطح العمل، وتخلص آمن من النفايات الطبية في كل زيارة.",
+      "en": "Single-use needles and tools, fully sterilised work surfaces and safe clinical-waste disposal on every visit."
+    },
+    "home.s4.title": {
+      "ar": "أسعار واضحة",
+      "en": "Clear pricing"
+    },
+    "home.s4.desc": {
+      "ar": "سعر كل تحليل معلن قبل السحب بدون مفاجآت، مع خصومات للشركات والأجهزة الحكومية وأعضاء النوادي.",
+      "en": "Every price is confirmed before the draw — no surprises, plus discounts for companies, authorities and club members."
+    },
+    "home.s4.link": {
+      "ar": "شاهد التعاقدات والخصومات",
+      "en": "See contracts & discounts"
+    },
+    "home.findBadge": {
+      "ar": "دليل التحاليل",
+      "en": "Test guide"
+    },
+    "home.findTitle": {
+      "ar": "ابحث عن تحليلك واعرف شروط الصيام",
+      "en": "Look up your test and its fasting rules"
+    },
+    "home.findDesc": {
+      "ar": "اكتب اسم التحليل بالعربي أو الإنجليزي لتعرف إن كان يحتاج صياماً وما هي تعليمات التحضير.",
+      "en": "Type the test name in Arabic or English to see whether fasting is required and how to prepare."
+    },
+    "home.searchPlaceholder": {
+      "ar": "ابحث: سكر، CBC، فيتامين د، غدة...",
+      "en": "Search: glucose, CBC, vitamin D, thyroid…"
+    },
+    "home.viewAllTests": {
+      "ar": "عرض دليل التحاليل كامل",
+      "en": "View the full test guide"
+    },
+    "home.visitBadge": {
+      "ar": "خدمة السحب المنزلي",
+      "en": "Home collection service"
+    },
+    "home.visitTitle": {
+      "ar": "لا تحتاج للخروج من بيتك",
+      "en": "No need to leave your home"
+    },
+    "home.visitTitle2": {
+      "ar": "التمريض يزورك في الموعد",
+      "en": "the nurse comes to you"
+    },
+    "home.visitDesc": {
+      "ar": "خدمة مخصصة لكبار السن، مرضي الحركة، الأطفال والحالات الخاصة. احجز على واتساب وأخبرنا بالتحاليل المطلوبة، وسيصلك فريق مجهز في الموعد الذي يناسبك.",
+      "en": "Designed for older adults, patients with limited mobility, children and special cases. Book on WhatsApp with your test list, and an equipped team arrives at the time that suits you."
+    },
+    "home.visitPoint1": {
+      "ar": "زيارة في نفس اليوم حسب التغطية",
+      "en": "Same-day visit depending on coverage"
+    },
+    "home.visitPoint2": {
+      "ar": "نتائج تصل على واتساب أو بالمعمل",
+      "en": "Results by WhatsApp or at the lab"
+    },
+    "home.visitPoint3": {
+      "ar": "إمكانية سحب عينات لكل أفراد الأسرة",
+      "en": "Samples for the whole family in one visit"
+    },
+    "home.howTitle": {
+      "ar": "كيف تحجز في 4 خطوات",
+      "en": "Booking in four steps"
+    },
+    "home.step1": {
+      "ar": "راسلنا على واتساب",
+      "en": "Message us on WhatsApp"
+    },
+    "home.step1d": {
+      "ar": "أرسل اسمك والعنوان والتحاليل المطلوبة أو صورة الروشتة.",
+      "en": "Send your name, address and the required tests — or a photo of the prescription."
+    },
+    "home.step2": {
+      "ar": "تأكيد الموعد والسعر",
+      "en": "Confirm time and price"
+    },
+    "home.step2d": {
+      "ar": "نرد عليك بالموعد المتاح والسعر النهائي قبل الزيارة.",
+      "en": "We reply with the available slot and the final price before the visit."
+    },
+    "home.step3": {
+      "ar": "زيارة التمريض",
+      "en": "The nurse visits"
+    },
+    "home.step3d": {
+      "ar": "سحب العينة بأدوات معقمة وبأقل قدر من الألم.",
+      "en": "Sample drawn with sterile, single-use tools and minimal discomfort."
+    },
+    "home.step4": {
+      "ar": "استلام النتيجة",
+      "en": "Receive results"
+    },
+    "home.step4d": {
+      "ar": "نتائجك جاهزة خلال 24 ساعة غالباً، مع شرح مبسط عند الحاجة.",
+      "en": "Usually ready within 24 hours, with a simple explanation on request."
+    },
+    "home.corpBadge": {
+      "ar": "للشركات والجهات",
+      "en": "For companies & bodies"
+    },
+    "home.corpTitle": {
+      "ar": "تعاقدات وخصومات تصل إلى 25%",
+      "en": "Contracts and discounts up to 25%"
+    },
+    "home.corpDesc": {
+      "ar": "نتعاقد مع الجهات الحكومية، مصانع المنطقة الصناعية، والنوادي الرياضية لتقديم فحوصات دورية وخصومات للعاملين وأسرهم.",
+      "en": "We work with government bodies, industrial-zone factories and sports clubs to provide periodic screening and staff discounts."
+    },
+    "home.corpCta": {
+      "ar": "اعرف تفاصيل التعاقدات",
+      "en": "View contract details"
+    },
+    "home.galleryBadge": {
+      "ar": "معرض التوعية",
+      "en": "Awareness gallery"
+    },
+    "home.galleryTitle": {
+      "ar": "تصاميم توعوية ننشرها على صفحاتنا",
+      "en": "Health posts we share on our channels"
+    },
+    "home.galleryDesc": {
+      "ar": "محتوى طبي مبسط أعدّه فريق المعمل لمساعدتك على فهم تحاليلك قبل وبعد الزيارة.",
+      "en": "Simple medical content our team prepares to help you understand your tests before and after your visit."
+    },
+    "home.galleryCta": {
+      "ar": "شاهد كل التصاميم",
+      "en": "See all posts"
+    },
+    "home.tipsBadge": {
+      "ar": "إرشادات سريعة",
+      "en": "Quick guidance"
+    },
+    "home.tipsTitle": {
+      "ar": "نصائح تجعل تحليلك أدق",
+      "en": "Tips that make your test more accurate"
+    },
+    "home.tipsDesc": {
+      "ar": "ثلاث نصائح فقط تصنع فرقاً حقيقياً في دقة النتيجة.",
+      "en": "Three simple habits that make a real difference to your result."
+    },
+    "home.tipsCta": {
+      "ar": "اقرأ دليل النصائح كامل",
+      "en": "Read the full tips guide"
+    },
+    "home.fbBadge": {
+      "ar": "رأيك يهمنا",
+      "en": "Your opinion matters"
+    },
+    "home.fbTitle": {
+      "ar": "شاركنا رأيك أو شكوتك بسرية تامة",
+      "en": "Share feedback or a complaint confidentially"
+    },
+    "home.fbDesc": {
+      "ar": "نقرأ كل رسالة بأنفسنا، ونستخدمها لتطوير الخدمة. يمكنك الإرسال بدون اسم أو رقم هاتف.",
+      "en": "We read every message ourselves and use it to improve. You can send it without a name or phone number."
+    },
+    "home.fbCta": {
+      "ar": "أرسل رسالتك الآن",
+      "en": "Send your message"
+    },
+    "home.faqTitle": {
+      "ar": "أسئلة يكررها زوارنا",
+      "en": "Questions we hear often"
+    },
+    "home.faqDesc": {
+      "ar": "إجابات سريعة عن الصيام، النتائج، والسحب المنزلي.",
+      "en": "Quick answers about fasting, results and home visits."
+    },
+    "cta.title": {
+      "ar": "محتاج تحليل؟ خلينا نرتّبها لك",
+      "en": "Need a test? Let us arrange it"
+    },
+    "cta.desc": {
+      "ar": "راسلنا على واتساب بطلبك وسنؤكد لك الموعد والسعر والتحضير المطلوب قبل الحضور.",
+      "en": "Message us on WhatsApp and we will confirm your slot, price and required preparation."
+    },
+    "cta.call": {
+      "ar": "اتصل بالمعمل",
+      "en": "Call the lab"
+    },
+    "cta.wa": {
+      "ar": "راسلنا على واتساب",
+      "en": "Chat on WhatsApp"
+    },
+    "tests.badge": {
+      "ar": "دليل التحاليل",
+      "en": "Test directory"
+    },
+    "tests.title": {
+      "ar": "كل تحليل وشروط تحضيره",
+      "en": "Every test and how to prepare"
+    },
+    "tests.desc": {
+      "ar": "ابحث بالاسم العربي أو الإنجليزي، أو اختر التصنيف، لتعرف إن كان التحليل يتطلب صياماً وكم ساعة، وأي تعليمات أخرى.",
+      "en": "Search by Arabic or English name or pick a category to see if fasting is needed, for how long, and any other instructions."
+    },
+    "tests.search": {
+      "ar": "ابحث باسم التحليل (مثال: سكر، cbc، فيتامين)",
+      "en": "Search a test (e.g. sugar, CBC, vitamin)"
+    },
+    "tests.fastingYes": {
+      "ar": "يتطلب صيام",
+      "en": "Fasting required"
+    },
+    "tests.fastingNo": {
+      "ar": "لا يتطلب صيام",
+      "en": "No fasting"
+    },
+    "tests.empty": {
+      "ar": "لا يوجد تحليل مطابق لبحثك. جرّب كلمة أخرى أو تواصل معنا على واتساب.",
+      "en": "No test matches your search. Try another keyword or ask us on WhatsApp."
+    },
+    "tests.priceNote": {
+      "ar": "الأسعار تقديرية بالجنيه المصري وقابلة للتغير — يُعتمد السعر النهائي عند الحجز.",
+      "en": "Prices are indicative in EGP and may change — the final price is confirmed at booking."
+    },
+    "tests.preparationTitle": {
+      "ar": "قواعد عامة قبل أي تحليل",
+      "en": "General rules before any test"
+    },
+    "tests.rule1": {
+      "ar": "اشرب ماء كفاية قبل السحب لتسهيل الوصول للوريد.",
+      "en": "Drink enough water before the draw to make veins easier to find."
+    },
+    "tests.rule1d": {
+      "ar": "الترطيب الجيد يقلل الإحساس بالألم ويجعل العينة أسهل.",
+      "en": "Good hydration reduces discomfort and simplifies collection."
+    },
+    "tests.rule2": {
+      "ar": "أخبر فريق التمريض بكل الأدوية والمكملات.",
+      "en": "Tell the nursing team about all medicines and supplements."
+    },
+    "tests.rule2d": {
+      "ar": "بعض الأدوية تؤثر في نتائج السكر والهرمونات والسيولة.",
+      "en": "Some medicines affect glucose, hormone and clotting results."
+    },
+    "tests.rule3": {
+      "ar": "تجنّب المجهود العنيف قبل التحليل.",
+      "en": "Avoid strenuous exercise before the test."
+    },
+    "tests.rule3d": {
+      "ar": "المجهود قد يرفع بعض الإنزيمات مؤقتاً ويعطي قراءة مضللة.",
+      "en": "Exercise can temporarily raise some enzymes and mislead readings."
+    },
+    "tests.rule4": {
+      "ar": "احضر في الصباح الباكر عندما يكون ممكناً.",
+      "en": "Come early in the morning when possible."
+    },
+    "tests.rule4d": {
+      "ar": "معظم تحاليل الصيام والهرمونات تُفضل صباحاً.",
+      "en": "Most fasting and hormone tests are best collected in the morning."
+    },
+    "tests.askTitle": {
+      "ar": "مش لاقي تحليلك؟",
+      "en": "Cannot find your test?"
+    },
+    "tests.askDesc": {
+      "ar": "أرسل صورة الروشتة أو اسم التحليل على واتساب وسنخبرك بالسعر والتحضير والموعد المتاح.",
+      "en": "Send a photo of the prescription or the test name on WhatsApp and we will reply with price, preparation and availability."
+    },
+    "visit.badge": {
+      "ar": "خدمة السحب المنزلي",
+      "en": "Home collection"
+    },
+    "visit.title": {
+      "ar": "سحب العينات في البيت بأمان واحترافية",
+      "en": "Sample collection at home — safe and professional"
+    },
+    "visit.desc": {
+      "ar": "فريق تمريض متخصص يصل إليك في الموعد المتفق عليه، مجهز بأدوات استخدام واحد ونظام تعقيم كامل، ومناسب لكبار السن والأطفال ومن لديهم صعوبة في الحركة.",
+      "en": "A specialised nurse arrives at your agreed time with single-use tools and full sterilisation — ideal for older adults, children and anyone with limited mobility."
+    },
+    "visit.whoTitle": {
+      "ar": "لمن تُناسب الخدمة؟",
+      "en": "Who is it for?"
+    },
+    "visit.who1": {
+      "ar": "كبار السن",
+      "en": "Older adults"
+    },
+    "visit.who1d": {
+      "ar": "بدون مشقة الانتقال أو الانتظار في الزحام.",
+      "en": "No travel effort or waiting in crowded waiting rooms."
+    },
+    "visit.who2": {
+      "ar": "الأطفال",
+      "en": "Children"
+    },
+    "visit.who2d": {
+      "ar": "سحب هادئ في بيئة مألوفة يقلل التوتر.",
+      "en": "A calm draw in a familiar environment reduces stress."
+    },
+    "visit.who3": {
+      "ar": "الحالات الخاصة",
+      "en": "Special cases"
+    },
+    "visit.who3d": {
+      "ar": "مرضى الحركة، الحوامل، وأصحاب الأمراض المزمنة.",
+      "en": "Limited mobility, pregnancy and chronic conditions."
+    },
+    "visit.who4": {
+      "ar": "الأسرة كلها",
+      "en": "Whole family"
+    },
+    "visit.who4d": {
+      "ar": "زيارة واحدة تجمع عينات جميع أفراد الأسرة.",
+      "en": "One visit can cover every family member."
+    },
+    "visit.coverTitle": {
+      "ar": "مناطق التغطية",
+      "en": "Coverage areas"
+    },
+    "visit.coverDesc": {
+      "ar": "الخدمة متاحة داخل نطاق: بلبيس، سندنهور، العاشر من رمضان، والمناطق المجاورة. للخارج عن النطاق راسلنا للتأكيد.",
+      "en": "Available in Belbeis, Sandanhour, 10th of Ramadan City and nearby areas. For other locations, message us to confirm."
+    },
+    "visit.formTitle": {
+      "ar": "احجز زيارة منزلية",
+      "en": "Book a home visit"
+    },
+    "visit.formDesc": {
+      "ar": "املأ البيانات وسنرد عليك لتأكيد الموعد. يمكنك أيضاً إرسال الطلب مباشرة على واتساب.",
+      "en": "Fill in the details and we will confirm your slot. You can also send the request straight to WhatsApp."
+    },
+    "visit.fName": {
+      "ar": "الاسم",
+      "en": "Full name"
+    },
+    "visit.fPhone": {
+      "ar": "رقم الهاتف / واتساب",
+      "en": "Phone / WhatsApp number"
+    },
+    "visit.fArea": {
+      "ar": "المنطقة أو العنوان",
+      "en": "Area or address"
+    },
+    "visit.fDate": {
+      "ar": "التاريخ المفضل",
+      "en": "Preferred date"
+    },
+    "visit.fSlot": {
+      "ar": "الوقت المفضل",
+      "en": "Preferred time"
+    },
+    "visit.slotMorning": {
+      "ar": "صباحاً (8 — 12)",
+      "en": "Morning (8–12)"
+    },
+    "visit.slotAfternoon": {
+      "ar": "بعد الظهر (12 — 5)",
+      "en": "Afternoon (12–5)"
+    },
+    "visit.slotEvening": {
+      "ar": "مساءً (5 — 11)",
+      "en": "Evening (5–11)"
+    },
+    "visit.fTests": {
+      "ar": "التحاليل المطلوبة",
+      "en": "Required tests"
+    },
+    "visit.fNotes": {
+      "ar": "ملاحظات إضافية",
+      "en": "Additional notes"
+    },
+    "visit.submit": {
+      "ar": "إرسال طلب الزيارة",
+      "en": "Send visit request"
+    },
+    "visit.waSubmit": {
+      "ar": "إرسال الطلب على واتساب",
+      "en": "Send request on WhatsApp"
+    },
+    "visit.prepTitle": {
+      "ar": "كيف تجهز نفسك للزيارة",
+      "en": "How to prepare for the visit"
+    },
+    "visit.prep1": {
+      "ar": "حدد التحاليل المطلوبة مسبقاً",
+      "en": "Know your test list in advance"
+    },
+    "visit.prep1d": {
+      "ar": "أرسل صورة الروشتة قبل الزيارة لنجهز الأنابيب المناسبة.",
+      "en": "Send a photo of the prescription beforehand so we bring the right tubes."
+    },
+    "visit.prep2": {
+      "ar": "التزم بشروط الصيام",
+      "en": "Follow the fasting instructions"
+    },
+    "visit.prep2d": {
+      "ar": "اسأل عن عدد الساعات المطلوبة وأوقف الأكل في الوقت المناسب.",
+      "en": "Ask for the required hours and stop eating at the right time."
+    },
+    "visit.prep3": {
+      "ar": "جهّز مكاناً مضيئاً",
+      "en": "Prepare a well-lit spot"
+    },
+    "visit.prep3d": {
+      "ar": "كرسي وطاولة بسيطة وإضاءة جيدة تسهّل السحب.",
+      "en": "A simple chair, table and good lighting make the draw easier."
+    },
+    "visit.prep4": {
+      "ar": "أخبرنا بالحالات الخاصة",
+      "en": "Flag any special needs"
+    },
+    "visit.prep4d": {
+      "ar": "أخبرنا إن كان المريض يتناول مسيلات دم أو لديه صعوبة في الوصول للوريد.",
+      "en": "Tell us about blood thinners or difficult veins in advance."
+    },
+    "gallery.badge": {
+      "ar": "معرض التوعية",
+      "en": "Awareness gallery"
+    },
+    "gallery.title": {
+      "ar": "تصاميم وبوستات التوعية الصحية",
+      "en": "Health awareness posts"
+    },
+    "gallery.desc": {
+      "ar": "مجموعة من التصاميم التي أعدّها فريق المعمل لتبسيط المعلومات الطبية ونشرها على صفحاتنا الرسمية.",
+      "en": "A set of posts prepared by our team to simplify medical information for our official channels."
+    },
+    "gallery.all": {
+      "ar": "كل التصاميم",
+      "en": "All posts"
+    },
+    "gallery.hint": {
+      "ar": "اضغط على أي تصميم لعرضه بحجم أكبر ونص كامل.",
+      "en": "Tap any post to view it larger with the full text."
+    },
+    "gallery.share": {
+      "ar": "شارك التصميم",
+      "en": "Share this post"
+    },
+    "gallery.copy": {
+      "ar": "نسخ النص",
+      "en": "Copy text"
+    },
+    "gallery.copied": {
+      "ar": "تم النسخ ✓",
+      "en": "Copied ✓"
+    },
+    "gallery.catServices": {
+      "ar": "خدماتنا",
+      "en": "Services"
+    },
+    "gallery.catGuide": {
+      "ar": "إرشادات المعمل",
+      "en": "Lab guidance"
+    },
+    "gallery.catTips": {
+      "ar": "نصائح توعية",
+      "en": "Awareness"
+    },
+    "gallery.catChronic": {
+      "ar": "السكري",
+      "en": "Diabetes"
+    },
+    "gallery.catWomen": {
+      "ar": "المرأة والحمل",
+      "en": "Women"
+    },
+    "gallery.catVitamins": {
+      "ar": "الفيتامينات",
+      "en": "Vitamins"
+    },
+    "gallery.catFasting": {
+      "ar": "الصيام",
+      "en": "Fasting"
+    },
+    "gallery.ctaTitle": {
+      "ar": "تابع تصاميمنا الجديدة أول بأول",
+      "en": "Follow our new posts"
+    },
+    "gallery.ctaDesc": {
+      "ar": "ننشر محتوى توعوياً أسبوعياً على فيسبوك وإنستجرام وقناة واتساب.",
+      "en": "We publish weekly awareness content on Facebook, Instagram and our WhatsApp channel."
+    },
+    "tips.badge": {
+      "ar": "الإرشاد الطبي",
+      "en": "Health guidance"
+    },
+    "tips.title": {
+      "ar": "نصائح طبية قبل وبعد التحليل",
+      "en": "Medical tips before and after your test"
+    },
+    "tips.desc": {
+      "ar": "معلومات مبسطة تساعدك على تحضير نفسك بشكل صحيح وتفهم نتيجتك — مع تنبيه واضح: هذه المادة توعوية ولا تُغني عن الطبيب.",
+      "en": "Simple information to help you prepare correctly and understand your result. Please note: this content is educational and does not replace your doctor."
+    },
+    "tips.readMore": {
+      "ar": "اقرأ النصيحة",
+      "en": "Read tip"
+    },
+    "tips.disclaimerTitle": {
+      "ar": "تنبيه مهم",
+      "en": "Important note"
+    },
+    "tips.disclaimer": {
+      "ar": "كل ما ورد في هذه الصفحة للتوعية العامة فقط، ولا يُستخدم لتشخيص أو علاج أي حالة. قرارات التشخيص والعلاج مسؤولية الطبيب المعالج.",
+      "en": "Everything on this page is general education only and must not be used to diagnose or treat any condition. Diagnosis and treatment decisions belong to your physician."
+    },
+    "tips.catFasting": {
+      "ar": "الصيام والتحاليل",
+      "en": "Fasting"
+    },
+    "tips.catChronic": {
+      "ar": "السكري والضغط",
+      "en": "Diabetes & BP"
+    },
+    "tips.catWomen": {
+      "ar": "المرأة والحمل",
+      "en": "Women"
+    },
+    "tips.catVitamins": {
+      "ar": "الفيتامينات والمناعة",
+      "en": "Vitamins"
+    },
+    "contracts.badge": {
+      "ar": "التعاقدات والخصومات",
+      "en": "Contracts & discounts"
+    },
+    "contracts.title": {
+      "ar": "جهات وشركات ونوادي متعاقدة معنا",
+      "en": "Authorities, companies and clubs we work with"
+    },
+    "contracts.desc": {
+      "ar": "شبكة تعاقدات تخدم جهاز مدينة العاشر من رمضان، مصانع المنطقة الصناعية، النوادي الرياضية، والجهات الحكومية — بخصومات للعاملين وأسرهم.",
+      "en": "A network serving the 10th of Ramadan City Authority, industrial-zone factories, sports clubs and government bodies — with discounts for staff and families."
+    },
+    "contracts.howTitle": {
+      "ar": "كيف تستفيد من الخصم؟",
+      "en": "How to use your discount"
+    },
+    "contracts.how1": {
+      "ar": "تأكد أن جهتك متعاقدة",
+      "en": "Check your employer is listed"
+    },
+    "contracts.how1d": {
+      "ar": "راجع القائمة أو راسلنا باسم الجهة للتأكيد.",
+      "en": "Browse the list or message us with your employer name."
+    },
+    "contracts.how2": {
+      "ar": "أحضر إثبات الانتماء",
+      "en": "Bring proof of affiliation"
+    },
+    "contracts.how2d": {
+      "ar": "كارنيه العمل أو بطاقة العضوية أو خطاب الجهة.",
+      "en": "An employee ID, membership card or employer letter."
+    },
+    "contracts.how3": {
+      "ar": "سجّل أسرتك معك",
+      "en": "Register your family"
+    },
+    "contracts.how3d": {
+      "ar": "أغلب التعاقدات تشمل الزوج/الزوجة والأبناء.",
+      "en": "Most agreements include spouse and children."
+    },
+    "contracts.how4": {
+      "ar": "استلم فاتورتك",
+      "en": "Get your invoice"
+    },
+    "contracts.how4d": {
+      "ar": "فاتورة رسمية باسم الجهة عند الحاجة للمحاسبة.",
+      "en": "Official invoice in your employer’s name when needed."
+    },
+    "contracts.askTitle": {
+      "ar": "عندك شركة أو جهة تريد التعاقد؟",
+      "en": "Want a corporate agreement?"
+    },
+    "contracts.askDesc": {
+      "ar": "نوفر برامج فحص دوري للعاملين (فحص ما قبل التوظيف، فحص سنوي، فحص سلامة الغذاء) بأسعار خاصة وتقارير مجمعة.",
+      "en": "We offer staff screening programmes (pre-employment, annual check-ups, food-handling certificates) with special rates and consolidated reports."
+    },
+    "contracts.askCta": {
+      "ar": "تواصل لإتمام التعاقد",
+      "en": "Talk to us about a contract"
+    },
+    "contracts.groupGov": {
+      "ar": "جهات حكومية",
+      "en": "Government"
+    },
+    "contracts.groupCorp": {
+      "ar": "شركات ومصانع",
+      "en": "Corporate"
+    },
+    "contracts.groupClub": {
+      "ar": "نوادي ورياضة",
+      "en": "Clubs"
+    },
+    "contracts.discount": {
+      "ar": "خصم",
+      "en": "Off"
+    },
+    "contracts.staffOnly": {
+      "ar": "للعاملين وأسرهم",
+      "en": "For staff & families"
+    },
+    "contact.badge": {
+      "ar": "تواصل معنا",
+      "en": "Contact us"
+    },
+    "contact.title": {
+      "ar": "نحن قريبون منك",
+      "en": "We are close to you"
+    },
+    "contact.desc": {
+      "ar": "اختر الطريقة الأنسب لك: واتساب، اتصال مباشر، أو زيارة أحد الفرعين. ويمكنك إرسال رأي أو شكوى بسرية تامة من نفس الصفحة.",
+      "en": "Choose what suits you: WhatsApp, a direct call, or visit either branch. You can also send feedback or a complaint confidentially from this page."
+    },
+    "contact.chWa": {
+      "ar": "واتساب المعمل",
+      "en": "Lab WhatsApp"
+    },
+    "contact.chWaD": {
+      "ar": "أسرع طريقة للحجز والاستفسار عن النتائج.",
+      "en": "The fastest way to book or ask about results."
+    },
+    "contact.chCall": {
+      "ar": "اتصال هاتفي",
+      "en": "Phone call"
+    },
+    "contact.chCallD": {
+      "ar": "للحالات المستعجلة والاستفسارات المباشرة.",
+      "en": "For urgent cases and direct enquiries."
+    },
+    "contact.chMail": {
+      "ar": "البريد الإلكتروني",
+      "en": "Email"
+    },
+    "contact.chMailD": {
+      "ar": "للتعاقدات وطلبات الشركات والملاحظات المكتوبة.",
+      "en": "For contracts, corporate requests and written feedback."
+    },
+    "contact.chHours": {
+      "ar": "مواعيد العمل",
+      "en": "Working hours"
+    },
+    "contact.branchesTitle": {
+      "ar": "فروعنا",
+      "en": "Our branches"
+    },
+    "contact.branchesDesc": {
+      "ar": "زورنا في أقرب فرع إليك — اضغط على الخريطة للوصول.",
+      "en": "Visit the branch nearest to you — tap the map for directions."
+    },
+    "contact.fbTitle": {
+      "ar": "رأيك أو شكوتك",
+      "en": "Feedback or complaint"
+    },
+    "contact.fbDesc": {
+      "ar": "نموذج واحد لكل شيء: رأي، اقتراح، أو شكوى — بسرية تامة ومع إمكانية الإرسال بدون بيانات.",
+      "en": "One form for everything: opinion, suggestion or complaint — fully confidential, and you can stay anonymous."
+    },
+    "contact.fbPrivacy": {
+      "ar": "بياناتك لا تُستخدم إلا للرد على رسالتك ولا تُشارك مع أي جهة.",
+      "en": "Your details are only used to reply to your message and are never shared."
+    },
+    "fb.typeLabel": {
+      "ar": "نوع الرسالة",
+      "en": "Message type"
+    },
+    "fb.typeOpinion": {
+      "ar": "رأي وتجربة",
+      "en": "Opinion"
+    },
+    "fb.typeSuggestion": {
+      "ar": "اقتراح تطوير",
+      "en": "Suggestion"
+    },
+    "fb.typeComplaint": {
+      "ar": "شكوى",
+      "en": "Complaint"
+    },
+    "fb.branchLabel": {
+      "ar": "الفرع",
+      "en": "Branch"
+    },
+    "fb.branchGeneral": {
+      "ar": "عام / زيارة منزلية",
+      "en": "General / home visit"
+    },
+    "fb.ratingLabel": {
+      "ar": "تقييمك للخدمة",
+      "en": "Rate your experience"
+    },
+    "fb.ratingHint": {
+      "ar": "اختياري — اضغط على النجوم",
+      "en": "Optional — tap the stars"
+    },
+    "fb.textLabel": {
+      "ar": "تفاصيل الرسالة",
+      "en": "Your message"
+    },
+    "fb.textPlaceholder": {
+      "ar": "اكتب ملاحظتك بكل صراحة.. نقرأ كل رسالة بنفسنا.",
+      "en": "Tell us honestly — every message is read by us."
+    },
+    "fb.nameLabel": {
+      "ar": "الاسم",
+      "en": "Name"
+    },
+    "fb.namePlaceholder": {
+      "ar": "الاسم (اختياري)",
+      "en": "Name (optional)"
+    },
+    "fb.phoneLabel": {
+      "ar": "رقم التواصل",
+      "en": "Contact number"
+    },
+    "fb.phonePlaceholder": {
+      "ar": "رقم الهاتف (اختياري)",
+      "en": "Phone (optional)"
+    },
+    "fb.anon": {
+      "ar": "تفضّل الإرسال كمجهول",
+      "en": "Prefer to stay anonymous"
+    },
+    "fb.anonHint": {
+      "ar": "أخفِ الاسم والهاتف تماماً",
+      "en": "Hide name and phone entirely"
+    },
+    "fb.channelLabel": {
+      "ar": "طريقة الإرسال",
+      "en": "Send via"
+    },
+    "fb.channelWa": {
+      "ar": "واتساب",
+      "en": "WhatsApp"
+    },
+    "fb.channelMail": {
+      "ar": "إيميل",
+      "en": "Email"
+    },
+    "fb.channelDirect": {
+      "ar": "إرسال مباشر للمعمل",
+      "en": "Send to the lab"
+    },
+    "fb.channelDirectHint": {
+      "ar": "يوصل لصندوق بريد المعمل تلقائياً",
+      "en": "Delivered straight to the lab inbox"
+    },
+    "fb.submit": {
+      "ar": "إرسال الرسالة بسرية تامة",
+      "en": "Send confidentially"
+    },
+    "fb.mustWrite": {
+      "ar": "اكتب تفاصيل الرسالة أولاً.",
+      "en": "Please write your message first."
+    },
+    "fb.mustChoose": {
+      "ar": "لا توجد طريقة إرسال معدّة. راسلنا على واتساب مباشرة.",
+      "en": "No sending channel is configured. Please message us on WhatsApp."
+    },
+    "fb.okWa": {
+      "ar": "تم تجهيز رسالتك على واتساب — أكمل الإرسال من التطبيق.",
+      "en": "Your message is ready in WhatsApp — press send there."
+    },
+    "fb.okMail": {
+      "ar": "تم فتح برنامج البريد برسالتك — اضغط إرسال.",
+      "en": "Your email app is open with the message — press send."
+    },
+    "fb.okDirect": {
+      "ar": "تم تسجيل رسالتك بنجاح. شكراً لأنك ساعدتنا على التطوير.",
+      "en": "Your message was recorded successfully. Thank you for helping us improve."
+    },
+    "fb.okFormspree": {
+      "ar": "تم إرسال رسالتك للمعمل بنجاح. شكراً لتواصلك.",
+      "en": "Your message reached the lab successfully. Thank you."
+    },
+    "fb.errWa": {
+      "ar": "ابعت رسالتك على واتساب بدلاً منها ←",
+      "en": "Send it on WhatsApp instead →"
+    },
+    "fb.err": {
+      "ar": "حدث خطأ في الإرسال. جرّب واتساب أو أعد المحاولة.",
+      "en": "Sending failed. Try WhatsApp or retry."
+    },
+    "fb.sending": {
+      "ar": "جارٍ الإرسال...",
+      "en": "Sending…"
+    },
+    "fb.recentTitle": {
+      "ar": "آخر ما استلمناه (يظهر لك فقط)",
+      "en": "Recently received (visible to you only)"
+    },
+    "privacy.title": {
+      "ar": "سياسة الخصوصية",
+      "en": "Privacy policy"
+    },
+    "privacy.desc": {
+      "ar": "كيف نتعامل مع بياناتك على هذا الموقع.",
+      "en": "How we handle your data on this site."
+    },
+    "terms.title": {
+      "ar": "شروط الاستخدام",
+      "en": "Terms of use"
+    },
+    "terms.desc": {
+      "ar": "الشروط المنظمة لاستخدام الموقع والمحتوى التوعوي.",
+      "en": "The terms governing use of this site and its educational content."
+    },
+    "legal.updated": {
+      "ar": "آخر تحديث: أكتوبر 2026",
+      "en": "Last updated: October 2026"
+    },
+    "nf.title": {
+      "ar": "الصفحة غير موجودة",
+      "en": "Page not found"
+    },
+    "nf.desc": {
+      "ar": "يبدو أن الرابط غير صحيح أو أن الصفحة تم نقلها. يمكنك العودة للرئيسية أو التواصل معنا.",
+      "en": "The link seems incorrect or the page has moved. Head back home or contact us."
+    },
+    "home.stat1": {
+      "ar": "سنة خبرة",
+      "en": "Years experience"
+    },
+    "home.stat2": {
+      "ar": "نوع تحليل",
+      "en": "Test types"
+    },
+    "home.stat3": {
+      "ar": "جهة متعاقدة",
+      "en": "Partners"
+    },
+    "home.waMsg": {
+      "ar": "السلام عليكم، عايز أحجز سحب منزلي من معامل الرحاب. التحاليل المطلوبة:",
+      "en": "Hello, I would like to book a home sample collection with AL Rehab Lab. Required tests:"
+    },
+    "visit.waMsg": {
+      "ar": "السلام عليكم، عايز أستفسر عن خدمة السحب المنزلي والمواعيد المتاحة.",
+      "en": "Hello, I would like to ask about home sample collection and available times."
+    },
+    "visit.ok": {
+      "ar": "تم تجهيز طلب الزيارة على واتساب — أكمل الإرسال من التطبيق.",
+      "en": "Your visit request is ready in WhatsApp — press send there."
+    },
+    "fb.waMsg": {
+      "ar": "السلام عليكم، عندي استفسار عن التحاليل والأسعار.",
+      "en": "Hello, I have a question about tests and prices."
+    }
+  },
+  "tests": [
+    {
+      "id": 1,
+      "ar": "صورة دم كاملة (CBC)",
+      "en": "Complete Blood Count (CBC)",
+      "category": "routine",
+      "ruleAr": "لا يتطلب صيام — يمكن إجراؤه في أي وقت",
+      "ruleEn": "No fasting needed",
+      "icon": "🩸",
+      "price": "150"
+    },
+    {
+      "id": 2,
+      "ar": "تحليل السكر الصائم (FBS)",
+      "en": "Fasting Blood Sugar (FBS)",
+      "category": "fasting",
+      "ruleAr": "صيام 8 – 12 ساعة مع السماح بشرب الماء",
+      "ruleEn": "Fast 8–12 hours, water allowed",
+      "icon": "🧪",
+      "price": "80"
+    },
+    {
+      "id": 3,
+      "ar": "السكر التراكمي (HbA1c)",
+      "en": "HbA1c",
+      "category": "chronic",
+      "ruleAr": "لا يتطلب صيام — يعكس متوسط السكر لـ 3 شهور",
+      "ruleEn": "No fasting — reflects 3-month average",
+      "icon": "📊",
+      "price": "120"
+    },
+    {
+      "id": 4,
+      "ar": "سكر عشوائي (RBS)",
+      "en": "Random Blood Sugar",
+      "category": "routine",
+      "ruleAr": "لا يتطلب صيام — يُفضل معه تسجيل وقت آخر وجبة",
+      "ruleEn": "No fasting — note last meal time",
+      "icon": "🍬",
+      "price": "60"
+    },
+    {
+      "id": 5,
+      "ar": "السكر بعد ساعتين (2h PP)",
+      "en": "2-Hour Post Prandial",
+      "category": "chronic",
+      "ruleAr": "يُسحب بعد ساعتين بالضبط من بداية الأكل",
+      "ruleEn": "Sample taken exactly 2h after meal",
+      "icon": "⏱️",
+      "price": "70"
+    },
+    {
+      "id": 6,
+      "ar": "وظائف كبد كاملة (Liver Profile)",
+      "en": "Liver Function Tests",
+      "category": "fasting",
+      "ruleAr": "صيام 6 – 8 ساعات",
+      "ruleEn": "Fast 6–8 hours",
+      "icon": "🫀",
+      "price": "250"
+    },
+    {
+      "id": 7,
+      "ar": "وظائف كلى (Kidney Profile)",
+      "en": "Kidney Function Tests",
+      "category": "routine",
+      "ruleAr": "لا يتطلب صيام — يُفضل شرب ماء جيد قبل السحب",
+      "ruleEn": "No fasting — stay well hydrated",
+      "icon": "💧",
+      "price": "200"
+    },
+    {
+      "id": 8,
+      "ar": "دهون كاملة (Lipid Profile)",
+      "en": "Lipid Profile",
+      "category": "fasting",
+      "ruleAr": "صيام 9 – 12 ساعة ضروري",
+      "ruleEn": "Fast 9–12 hours (required)",
+      "icon": "🥑",
+      "price": "180"
+    },
+    {
+      "id": 9,
+      "ar": "فيتامين د3 (Vitamin D3)",
+      "en": "Vitamin D3",
+      "category": "vitamins",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "☀️",
+      "price": "350"
+    },
+    {
+      "id": 10,
+      "ar": "فيتامين ب12 (Vitamin B12)",
+      "en": "Vitamin B12",
+      "category": "vitamins",
+      "ruleAr": "صيام 2 – 4 ساعات مستحسن",
+      "ruleEn": "Preferred fast 2–4 hours",
+      "icon": "⚡",
+      "price": "280"
+    },
+    {
+      "id": 11,
+      "ar": "الحديد والفيريتين (Iron & Ferritin)",
+      "en": "Iron & Ferritin",
+      "category": "vitamins",
+      "ruleAr": "يُفضل السحب صباحاً وبعد صيام 8 ساعات",
+      "ruleEn": "Morning sample, prefer 8h fast",
+      "icon": "🧲",
+      "price": "300"
+    },
+    {
+      "id": 12,
+      "ar": "الغدة الدرقية (TSH, T3, T4)",
+      "en": "Thyroid Profile (TSH/T3/T4)",
+      "category": "hormones",
+      "ruleAr": "لا يتطلب صيام — يُفضل صباحاً قبل جرعة العلاج",
+      "ruleEn": "No fasting — morning, before medication",
+      "icon": "🦋",
+      "price": "280"
+    },
+    {
+      "id": 13,
+      "ar": "هرمون الحمل (Beta HCG)",
+      "en": "Beta HCG (Pregnancy)",
+      "category": "women",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "🤰",
+      "price": "120"
+    },
+    {
+      "id": 14,
+      "ar": "تحليل هرمونات الذكورة (Testosterone)",
+      "en": "Testosterone",
+      "category": "hormones",
+      "ruleAr": "يُفضل السحب صباحاً بين 8 – 10 صباحاً",
+      "ruleEn": "Morning sample 8–10 AM",
+      "icon": "⚗️",
+      "price": "320"
+    },
+    {
+      "id": 15,
+      "ar": "البرولاكتين (Prolactin)",
+      "en": "Prolactin",
+      "category": "hormones",
+      "ruleAr": "صيام 3 ساعات وتجنب الإجهاد قبل السحب",
+      "ruleEn": "Fast 3h, avoid stress",
+      "icon": "🧬",
+      "price": "250"
+    },
+    {
+      "id": 16,
+      "ar": "تحليل حمل للدم (Anaemia Profile)",
+      "en": "Anaemia Profile",
+      "category": "women",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "💗",
+      "price": "240"
+    },
+    {
+      "id": 17,
+      "ar": "CRP / ESR (مؤشرات الالتهاب)",
+      "en": "CRP / ESR",
+      "category": "immunity",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "🛡️",
+      "price": "160"
+    },
+    {
+      "id": 18,
+      "ar": "تحليل الغدة الدرقية للحوامل (API)",
+      "en": "Thyroid — Pregnancy Panel",
+      "category": "women",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "👶",
+      "price": "330"
+    },
+    {
+      "id": 19,
+      "ar": "تحليل فيتامين ك والكالسيوم (Calcium & Vit K)",
+      "en": "Calcium & Vitamin K",
+      "category": "vitamins",
+      "ruleAr": "صيام 6 ساعات مستحسن",
+      "ruleEn": "Preferred 6h fast",
+      "icon": "🦴",
+      "price": "290"
+    },
+    {
+      "id": 20,
+      "ar": "وظائف الغدة الدرقية الكاملة (Comprehensive)",
+      "en": "Comprehensive Thyroid Panel",
+      "category": "hormones",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "🔬",
+      "price": "450"
+    },
+    {
+      "id": 21,
+      "ar": "تحليل بول كامل (Urine Analysis)",
+      "en": "Urine Analysis",
+      "category": "routine",
+      "ruleAr": "يُفضل عينة بول صباحي أول",
+      "ruleEn": "Prefer first morning sample",
+      "icon": "🧯",
+      "price": "70"
+    },
+    {
+      "id": 22,
+      "ar": "سائل منوي — تحليل دوامة (Semen Analysis)",
+      "en": "Semen Analysis",
+      "category": "routine",
+      "ruleAr": "امتناع 3 – 5 أيام قبل التحليل",
+      "ruleEn": "Abstain 3–5 days before",
+      "icon": "🧫",
+      "price": "150"
+    },
+    {
+      "id": 23,
+      "ar": "صيام مطلوب — تحليل نشاط الكبد (Ammonia)",
+      "en": "Ammonia Test",
+      "category": "fasting",
+      "ruleAr": "صيام 8 ساعات + عدم التدخين",
+      "ruleEn": "Fast 8h, no smoking",
+      "icon": "🚭",
+      "price": "300"
+    },
+    {
+      "id": 24,
+      "ar": "تحليل الحمض النووي (PCR)",
+      "en": "PCR Test",
+      "category": "immunity",
+      "ruleAr": "لا يتطلب صيام",
+      "ruleEn": "No fasting",
+      "icon": "🧬",
+      "price": "550"
+    }
+  ],
+  "testCategories": [
+    {
+      "id": "all",
+      "ar": "الكل",
+      "en": "All"
+    },
+    {
+      "id": "fasting",
+      "ar": "يتطلب صيام",
+      "en": "Fasting"
+    },
+    {
+      "id": "routine",
+      "ar": "لا يتطلب صيام",
+      "en": "No fasting"
+    },
+    {
+      "id": "chronic",
+      "ar": "السكري ومتابعته",
+      "en": "Diabetes"
+    },
+    {
+      "id": "hormones",
+      "ar": "الهرمونات",
+      "en": "Hormones"
+    },
+    {
+      "id": "vitamins",
+      "ar": "الفيتامينات",
+      "en": "Vitamins"
+    },
+    {
+      "id": "women",
+      "ar": "المرأة والحمل",
+      "en": "Women"
+    },
+    {
+      "id": "immunity",
+      "ar": "المناعة والالتهاب",
+      "en": "Immunity"
+    }
+  ],
+  "tips": [
+    {
+      "id": 1,
+      "category": "fasting",
+      "icon": "⏳",
+      "ar": {
+        "title": "أهمية الصيام الدقيق قبل فحوصات الدهون والسكر",
+        "text": "الصيام من 8 إلى 12 ساعة يضمن خلو الدم من جزيئات الدهون والسكريات الممتصة حديثاً، مما يمنح الطبيب قراءات صحيحة يمكن الاعتماد عليها في التشخيص.",
+        "note": "الماء الصافي مسموح تماماً أثناء الصيام، وقبل أي تحليل اسأل عن عدد الساعات المطلوبة."
+      },
+      "en": {
+        "title": "Why accurate fasting matters before sugar & lipid tests",
+        "text": "Fasting for 8–12 hours keeps recently absorbed fats and sugars out of the blood, giving your doctor readings that are reliable for diagnosis.",
+        "note": "Plain water is fully allowed during fasting — always ask for the exact fasting window."
+      }
+    },
+    {
+      "id": 2,
+      "category": "chronic",
+      "icon": "📈",
+      "ar": {
+        "title": "السكر التراكمي (HbA1c) كل 3 شهور",
+        "text": "الهيموجلوبين السكري يعكس متوسط مستوى الجلوكوز في دمك على مدار 90 يوماً، لذلك هو المؤشر الأصدق لالتزام الخطة العلاجية.",
+        "note": "النسبة المستهدفة لمعظم مرضى السكري أقل من 7% حسب رأي الطبيب."
+      },
+      "en": {
+        "title": "HbA1c every 3 months",
+        "text": "HbA1c reflects your average blood glucose over 90 days, making it the most honest indicator of how your treatment plan is working.",
+        "note": "The usual target for most patients is below 7%, as advised by your doctor."
+      }
+    },
+    {
+      "id": 3,
+      "category": "vitamins",
+      "icon": "☀️",
+      "ar": {
+        "title": "فيتامين (د) والإجهاد الخامل",
+        "text": "نقص فيتامين D يسبب خمولاً مستمراً وتقلبات مزاجية وضعفاً في المناعة وآلاماً في العضلات، ويُكتشف مبكراً بفحص بسيط.",
+        "note": "يُفضل فحص دوري سنوي لكبار السن والحوامل وأصحاب العمل المكتبي."
+      },
+      "en": {
+        "title": "Vitamin D and constant fatigue",
+        "text": "Low vitamin D causes persistent fatigue, mood swings, weaker immunity and muscle aches — all easy to detect with a simple blood test.",
+        "note": "An annual check is recommended for older adults, pregnant women and office workers."
+      }
+    },
+    {
+      "id": 4,
+      "category": "women",
+      "icon": "🤰",
+      "ar": {
+        "title": "فحوصات الحمل: مجموعات عشوائية أم صيام؟",
+        "text": "بعض تحاليل الحمل تُطلب مع صيام وأخرى لا، لذلك من الأفضل حضورك على معدة خفيفة مع شرب ماء جيد، وتحديد التحاليل المطلوبة قبل الحضور علمياً.",
+        "note": "احصلي على قائمة التحاليل من طبيبتك قبل الزيارة لتجنب تكرار السحب."
+      },
+      "en": {
+        "title": "Pregnancy panels: fasting or not?",
+        "text": "Some pregnancy tests require fasting and others do not. Arrive lightly fed and well hydrated, and confirm the exact list with your doctor beforehand.",
+        "note": "Bring the full test list from your doctor to avoid a repeat draw."
+      }
+    },
+    {
+      "id": 5,
+      "category": "fasting",
+      "icon": "☕",
+      "ar": {
+        "title": "القهوة والشاي قبل التحليل",
+        "text": "المشروبات المنبهة قد ترفع ضغط الدم مؤقتاً وتؤثر في بعض قراءات السكر، كما أن السكر والحليب فيها يكسر الصيام.",
+        "note": "إذا كان التحليل يتطلب صياماً، اكتفِ بالماء فقط حتى ينسحب سحب العينة."
+      },
+      "en": {
+        "title": "Coffee and tea before a test",
+        "text": "Caffeine drinks can temporarily raise blood pressure and affect some glucose readings — and sugar or milk breaks your fast.",
+        "note": "If fasting is required, stick to plain water until the sample is collected."
+      }
+    },
+    {
+      "id": 6,
+      "category": "chronic",
+      "icon": "🩺",
+      "ar": {
+        "title": "قبل فحص الضغط والسكر: لا تُجهد نفسك",
+        "text": "الصعود بالسلم والانفعال والتدخين قبل القياس يرفع القراءة مؤقتاً. اجلس واسترح 5 دقائق على الأقل قبل السحب أو القياس.",
+        "note": "أبلغ فريق التمريض بكل الأدوية التي تتناولها قبل السحب."
+      },
+      "en": {
+        "title": "Before a BP or sugar check: rest first",
+        "text": "Climbing stairs, stress or smoking right before a reading pushes it up temporarily. Sit and rest for at least 5 minutes first.",
+        "note": "Tell the nurse about every medication you take before the sample is drawn."
+      }
+    }
+  ],
+  "tipCategories": [
+    {
+      "id": "all",
+      "ar": "الكل",
+      "en": "All"
+    },
+    {
+      "id": "fasting",
+      "ar": "الصيام والتحاليل",
+      "en": "Fasting"
+    },
+    {
+      "id": "chronic",
+      "ar": "السكري والضغط",
+      "en": "Diabetes & BP"
+    },
+    {
+      "id": "women",
+      "ar": "المرأة والحمل",
+      "en": "Women & Pregnancy"
+    },
+    {
+      "id": "vitamins",
+      "ar": "الفيتامينات والمناعة",
+      "en": "Vitamins & Immunity"
+    }
+  ],
+  "designs": [
+    {
+      "id": 1,
+      "ar": "أهمية فحص الفيتامينات الدوري",
+      "en": "Why regular vitamin screening matters",
+      "category": "vitamins",
+      "catAr": "نصائح توعية",
+      "catEn": "Awareness",
+      "descAr": "بوستر يوضح علامات نقص فيتامين د والحديد وكيفية الوقاية والفحص المبكر.",
+      "descEn": "Signs of vitamin D and iron deficiency and how to prevent them.",
+      "image": "assets/posters/vitamins.jpg"
+    },
+    {
+      "id": 2,
+      "ar": "قواعد الصيام قبل التحاليل",
+      "en": "Fasting rules before blood tests",
+      "category": "fasting",
+      "catAr": "إرشادات المعمل",
+      "catEn": "Lab guidance",
+      "descAr": "ساعات الصيام المطلوبة لكل نوع تحليل، والمشروبات المسموحة أثناء الصيام.",
+      "descEn": "The fasting window for each test type and which drinks are allowed.",
+      "image": "assets/posters/fasting.jpg"
+    },
+    {
+      "id": 3,
+      "ar": "خدمة السحب المنزلي",
+      "en": "Home sample collection",
+      "category": "services",
+      "catAr": "خدماتنا",
+      "catEn": "Services",
+      "descAr": "كيفية طلب زيارة تمريض على باب المنزل لكبار السن والحالات الخاصة.",
+      "descEn": "How to request a home nursing visit for older adults and special cases.",
+      "image": "assets/posters/home-visit.jpg"
+    },
+    {
+      "id": 4,
+      "ar": "السكر التراكمي: مرآة الـ 3 شهور",
+      "en": "HbA1c: your 3-month mirror",
+      "category": "chronic",
+      "catAr": "السكري",
+      "catEn": "Diabetes",
+      "descAr": "بوستر يشرح ما هو الهيموجلوبين السكري وكيف يقرأه المريض مع طبيبه.",
+      "descEn": "What HbA1c means and how to read it with your doctor.",
+      "image": "assets/posters/hba1c.jpg"
+    },
+    {
+      "id": 5,
+      "ar": "فحوصات الحمل الأساسية",
+      "en": "Pregnancy screening panel",
+      "category": "women",
+      "catAr": "المرأة والحمل",
+      "catEn": "Women",
+      "descAr": "التحاليل الأساسية المطلوبة للتحقق من الحمل ومتابعته في الأشهر الأولى.",
+      "descEn": "Essential tests for confirming and monitoring early pregnancy.",
+      "image": "assets/posters/pregnancy.jpg"
+    },
+    {
+      "id": 6,
+      "ar": "الأمان والتعقيم في المعمل",
+      "en": "Safety and sterilisation in the lab",
+      "category": "services",
+      "catAr": "إرشادات المعمل",
+      "catEn": "Lab guidance",
+      "descAr": "خطوات التعقيم وسحب العينات بإبرة واحدة دون ألم أو تلوث.",
+      "descEn": "Sterilisation steps and single-use needle technique for a safe draw.",
+      "image": "assets/posters/safety.jpg"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "ar": "جهاز مدينة العاشر من رمضان",
+      "en": "10th of Ramadan City Authority",
+      "group": "government",
+      "detailAr": "خصم للحاملين للكارنيه والبطاقات الرسمية الخاصة بالجهاز.",
+      "detailEn": "Special discount for employees with an official authority ID.",
+      "discount": "10%",
+      "mark": "🏛️"
+    },
+    {
+      "id": 2,
+      "ar": "المنطقة الصناعية — الشركات والمصانع",
+      "en": "Industrial Zone — Companies & Factories",
+      "group": "corporate",
+      "detailAr": "خصم 20% للعاملين وأسرهم على كل التحاليل والفحوصات.",
+      "detailEn": "20% off all tests for employees and their families.",
+      "discount": "20%",
+      "mark": "🏭"
+    },
+    {
+      "id": 3,
+      "ar": "نادي العاشر من رمضان الرياضي",
+      "en": "10th of Ramadan Sports Club",
+      "group": "club",
+      "detailAr": "خصم 25% للأعضاء والارساليات الرياضية والفحوصات الدورية.",
+      "detailEn": "25% off for members plus athletic periodic panels.",
+      "discount": "25%",
+      "mark": "⚽"
+    },
+    {
+      "id": 4,
+      "ar": "المصالح الحكومية والأجهزة التنفيذية",
+      "en": "Government Services & Executive Bodies",
+      "group": "government",
+      "detailAr": "تعاقدات موحدة لفحوصات العاملين وفق اشتراطات الجهة.",
+      "detailEn": "Structured staff-screening agreements per authority requirements.",
+      "discount": "خصم خاص",
+      "mark": "🏢"
+    }
+  ],
+  "contractGroups": [
+    {
+      "id": "all",
+      "ar": "الكل",
+      "en": "All"
+    },
+    {
+      "id": "government",
+      "ar": "الجهات الحكومية",
+      "en": "Government"
+    },
+    {
+      "id": "corporate",
+      "ar": "الشركات والمصانع",
+      "en": "Corporate"
+    },
+    {
+      "id": "club",
+      "ar": "النوادي والرياضة",
+      "en": "Clubs"
+    }
+  ],
+  "faq": [
+    {
+      "ar": {
+        "q": "هل يمكنني الحضور بدون صيام؟",
+        "a": "نعم، أكثر من نصف التحاليل لا تتطلب صياماً مثل صورة الدم الكاملة ووظائف الكلى والهرمونات. ابحث عن اسم التحليل في دليل التحاليل لمعرفة الشروط الدقيقة قبل الحضور."
+      },
+      "en": {
+        "q": "Can I come without fasting?",
+        "a": "Yes. Most tests — like CBC, kidney function and hormones — need no fasting. Search the test name in our test guide to check the exact conditions first."
+      }
+    },
+    {
+      "ar": {
+        "q": "كم يستغرق ظهور النتيجة؟",
+        "a": "نتائج التحاليل العادية تظهر في نفس اليوم أو خلال 24 ساعة، أما التحاليل المتخصصة والزراعات فتستغرق من يومين إلى 5 أيام. يُبلغ الزائر بالوقت المتوقع عند السحب."
+      },
+      "en": {
+        "q": "How long do results take?",
+        "a": "Routine results are ready the same day or within 24 hours. Specialised tests and cultures take 2–5 days. The expected time is confirmed at collection."
+      }
+    },
+    {
+      "ar": {
+        "q": "هل خدمة السحب المنزلي متاحة في كل المناطق؟",
+        "a": "الخدمة متاحة داخل بلبيس وسندنهور والعاشر من رمضان وما حولها. أرسل عنوانك على واتساب وسنؤكد لك التغطية والموعد المتاح."
+      },
+      "en": {
+        "q": "Is home collection available everywhere?",
+        "a": "We cover Belbeis, Sandanhour, 10th of Ramadan City and nearby areas. Send your address on WhatsApp and we will confirm coverage and timing."
+      }
+    },
+    {
+      "ar": {
+        "q": "هل بياناتي ومشاركتي للرأي سرية؟",
+        "a": "بالتأكيد. نموذج الآراء والشكاوى يتيح لك الإرسال بشكل مجهول تماماً، والاسم والهاتف اختياريان فقط إذا رغبت في متابعة الرد معك."
+      },
+      "en": {
+        "q": "Is my feedback confidential?",
+        "a": "Absolutely. The feedback form can be submitted fully anonymously — name and phone are optional, only if you want us to follow up with you."
+      }
+    },
+    {
+      "ar": {
+        "q": "هل يوجد خصم للشركات والأسر؟",
+        "a": "نعم. لدينا تعاقدات مع جهات حكومية وشركات المنطقة الصناعية ونوادي رياضية بنسب خصم تصل إلى 25% للعاملين وأسرهم. راجع صفحة التعاقدات أو تواصل معنا."
+      },
+      "en": {
+        "q": "Are there corporate or family discounts?",
+        "a": "Yes. We have agreements with government bodies, industrial-zone companies and sports clubs offering up to 25% off for employees and families. See the contracts page."
+      }
+    }
+  ]
+}

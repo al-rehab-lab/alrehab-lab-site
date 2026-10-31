@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة التحكم | معامل الرحاب للتحاليل الطبية</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin/admin.css">
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<div class="login-wrap" id="loginView">
+  <div class="login-card">
+    <div class="login-brand">
+      <img src="assets/logo-256.png" alt="معامل الرحاب" width="54" height="54">
+      <div>
+        <b>معامل الرحاب للتحاليل الطبية</b>
+        <span>AL REHAB MEDICAL LAB</span>
+      </div>
+    </div>
+    <h1>لوحة التحكم</h1>
+    <p class="sub">دخول آمن عبر GitHub — تُحفظ التعديلات في الريبو وتظهر على الموقع مباشرة.</p>
+
+    <form id="loginForm">
+      <div class="row2">
+        <label class="f"><span class="lbl">اسم المستخدم / الجهة</span>
+          <input class="in" id="ghOwner" dir="ltr" placeholder="al-rehab-lab" required></label>
+        <label class="f"><span class="lbl">اسم الريبو</span>
+          <input class="in" id="ghRepo" dir="ltr" placeholder="alrehab-lab-site" required></label>
+      </div>
+      <label class="f"><span class="lbl">الفرع</span>
+        <input class="in" id="ghBranch" dir="ltr" value="main" required></label>
+      <label class="f"><span class="lbl">GitHub Token (Fine-grained)</span>
+        <input class="in" id="ghToken" type="password" dir="ltr" placeholder="github_pat_..." required>
+        <small>يُحفظ على جهازك فقط (localStorage). لا تشاركه مع أي شخص.</small></label>
+
+      <button class="btn-a btn-a--blue btn-a--block" id="loginBtn" type="submit" style="margin-top:6px">دخول لوحة التحكم</button>
+    </form>
+
+    <div class="hintbox" style="margin-top:16px">
+      <b>إزاي تعمل التوكن؟</b>
+      <ol>
+        <li>افتح <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener" style="text-decoration:underline">github.com/settings/tokens</a></li>
+        <li><b>Generate new token</b> → اختر الريبو <code>alrehab-lab-site</code></li>
+        <li>صلاحية <b>Contents: Read and write</b> + <b>Metadata: Read</b></li>
+        <li>Expiration: سنة → أنشئ → انسخ التوكن والصقه فوق</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ============ APP ============ -->
+<div class="shell" id="appView" hidden>
+  <aside class="side">
+    <div class="side__brand">
+      <img src="assets/logo-256.png" alt="" width="40" height="40">
+      <div><b>لوحة تحكم المعمل</b><span>AL REHAB ADMIN</span></div>
+    </div>
+    <nav id="sideNav" style="display:grid;gap:4px"></nav>
+    <div class="side__foot">
+      <a href="index.html" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 3h7v7M21 3l-9 9M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>
+        عرض الموقع
+      </a>
+      <button type="button" id="themeToggleA">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+        الوضع الليلي
+      </button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar-a">
+      <div>
+        <h2 id="panelTitle">نظرة عامة</h2>
+        <div class="sub" id="panelSub">ملخص المحتوى وحالة الموقع</div>
+      </div>
+      <div class="topbar-a__actions">
+        <button class="btn-a btn-a--ghost btn-a--sm" id="saveState" type="button"><span class="dot"></span> كل التعديلات محفوظة</button>
+        <button class="btn-a btn-a--blue" id="saveAll" type="button" disabled>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 3h11l4 4v14H5z"/><path d="M8 3v6h8V3M8 21v-6h8v6"/></svg>
+          حفظ ونشر التعديلات
+        </button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- ===== Dashboard ===== -->
+      <section class="panel" data-panel="dashboard">
+        <div class="stats" id="dashStats"></div>
+        <div class="card-a">
+          <div class="card-a__head"><h3>حالة الموقع</h3></div>
+          <div id="dashInfo"></div>
+        </div>
+        <div class="card-a">
+          <div class="card-a__head"><h3>ابدأ من هنا</h3><p>أي تعديل تحفظه يظهر على الموقع خلال دقيقة تقريباً</p></div>
+          <div class="hintbox">
+            <ul>
+              <li><b>بيانات المعمل</b> — الهاتف، الإيميل، المواعيد، الفروع، روابط السوشيال.</li>
+              <li><b>نصوص الموقع</b> — كل عنوان وجملة في الصفحات (عربي + إنجليزي).</li>
+              <li><b>دليل التحاليل</b> — إضافة تحليل، تغيير السعر، تعديل شروط الصيام.</li>
+              <li><b>معرض التوعية</b> و<b>التعاقدات</b> — تغيير الصور واللوجوهات من مكتبة الصور.</li>
+              <li><b>نسخ احتياطي</b> — نزّل نسخة من المحتوى قبل أي تغيير كبير.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== General ===== -->
+      <section class="panel" data-panel="general">
+        <div class="card-a">
+          <div class="card-a__head"><h3>بيانات المعمل</h3><p>تظهر في الهيدر والفوتر وصفحة التواصل</p></div>
+          <div id="generalForm"></div>
+        </div>
+      </section>
+
+      <!-- ===== Texts ===== -->
+      <section class="panel" data-panel="texts">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>كل نصوص الموقع</h3>
+            <input class="in" id="textSearch" placeholder="ابحث في النصوص…" style="max-width:280px">
+          </div>
+          <div class="hintbox" style="margin-bottom:14px">النصوص مقسّمة بالمجموعات. عدّل العربي أو الإنجليزي، وبعدها اضغط <b>حفظ ونشر</b>.</div>
+          <div id="textsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Stats ===== -->
+      <section class="panel" data-panel="stats">
+        <div class="card-a">
+          <div class="card-a__head"><h3>الأرقام الظاهرة في البانر</h3></div>
+          <div class="list" id="statsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Tests ===== -->
+      <section class="panel" data-panel="tests">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>دليل التحاليل</h3>
+            <button class="btn-a btn-a--blue btn-a--sm" type="button" data-add="tests">+ إضافة تحليل</button>
+          </div>
+          <div class="list" id="testsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Tips ===== -->
+      <section class="panel" data-panel="tips">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>النصائح الطبية</h3>
+            <button class="btn-a btn-a--blue btn-a--sm" type="button" data-add="tips">+ إضافة نصيحة</button>
+          </div>
+          <div class="list" id="tipsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Designs ===== -->
+      <section class="panel" data-panel="designs">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>معرض تصاميم التوعية</h3>
+            <button class="btn-a btn-a--blue btn-a--sm" type="button" data-add="designs">+ إضافة تصميم</button>
+          </div>
+          <div class="list" id="designsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Contracts ===== -->
+      <section class="panel" data-panel="contracts">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>الجهات المتعاقدة</h3>
+            <button class="btn-a btn-a--blue btn-a--sm" type="button" data-add="contracts">+ إضافة جهة</button>
+          </div>
+          <div class="hintbox" style="margin-bottom:14px">تقدر ترفع <b>لوجو الجهة</b> من مكتبة الصور، ولو مفيش لوجو هيظهر الإيموجي البديل.</div>
+          <div class="list" id="contractsBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section class="panel" data-panel="faq">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>الأسئلة الشائعة</h3>
+            <button class="btn-a btn-a--blue btn-a--sm" type="button" data-add="faq">+ إضافة سؤال</button>
+          </div>
+          <div class="list" id="faqBody"></div>
+        </div>
+      </section>
+
+      <!-- ===== Media ===== -->
+      <section class="panel" data-panel="media">
+        <div class="card-a">
+          <div class="card-a__head">
+            <h3>مكتبة الصور</h3>
+            <button class="btn-a btn-a--blue" type="button" id="openMedia">فتح المكتبة / رفع صورة</button>
+          </div>
+          <div class="hintbox">الصور المرفوعة تُضغط تلقائياً (حد أقصى 1600px) وتُحفظ في <code>assets/uploads/</code> داخل الريبو.</div>
+        </div>
+      </section>
+
+      <!-- ===== Backup ===== -->
+      <section class="panel" data-panel="backup">
+        <div class="card-a">
+          <div class="card-a__head"><h3>نسخ احتياطي واستعادة</h3></div>
+          <div class="list">
+            <div class="li" style="grid-template-columns:1fr auto">
+              <div class="li__body"><b>تصدير المحتوى</b><span>نزّل ملف JSON فيه كل محتوى الموقع الحالي</span></div>
+              <button class="btn-a btn-a--ghost btn-a--sm" type="button" id="exportBtn">تنزيل JSON</button>
+            </div>
+            <div class="li" style="grid-template-columns:1fr auto">
+              <div class="li__body"><b>استيراد محتوى</b><span>ارفع ملف JSON سبق تصديره لاستعادة الحالة</span></div>
+              <div>
+                <input type="file" accept="application/json" id="importInput" hidden>
+                <label class="btn-a btn-a--ghost btn-a--sm" for="importInput" style="cursor:pointer">اختيار ملف</label>
+              </div>
+            </div>
+            <div class="li" style="grid-template-columns:1fr auto">
+              <div class="li__body"><b>تثبيت ملف المحتوى في الريبو</b><span>لو content.json مش موجود في الريبو اضغط هنا</span></div>
+              <button class="btn-a btn-a--blue btn-a--sm" type="button" id="uploadContentBtn">رفع content.json</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Settings ===== -->
+      <section class="panel" data-panel="settings">
+        <div class="card-a">
+          <div class="card-a__head"><h3>إعدادات الاتصال بـ GitHub</h3></div>
+          <div id="settingsForm"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="savebar">
+      <span class="savebar__state" id="saveStateBottom"><span class="dot"></span> كل التعديلات محفوظة</span>
+      <button class="btn-a btn-a--blue" type="button" id="saveAllBottom" disabled>حفظ ونشر التعديلات</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="editModal">
+  <div class="modal__scrim" data-modal-close></div>
+  <div class="modal__panel">
+    <h3 id="modalTitle">تعديل</h3>
+    <div id="modalBody"></div>
+    <div class="modal__actions">
+      <button class="btn-a btn-a--ghost" type="button" data-modal-close>إلغاء</button>
+      <button class="btn-a btn-a--blue" type="button" id="modalSave">حفظ التغييرات</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/content.js"></script>
+<script src="admin/github.js"></script>
+<script src="admin/media.js"></script>
+<script src="admin/admin.js"></script>
+</body>
+</html>
