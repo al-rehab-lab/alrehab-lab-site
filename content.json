@@ -1690,7 +1690,7 @@
       "detailEn": "Special discount for employees with an official authority ID.",
       "discount": "10%",
       "mark": "🏛️",
-      "logo": ""
+      "logo": "assets/slogan.png"
     },
     {
       "id": 2,
@@ -1797,5 +1797,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:20:13.458Z"
+  "updatedAt": "2026-10-31T18:22:54.842Z"
 }
