@@ -19,7 +19,7 @@
     "socials": {
       "facebook": "https://www.facebook.com/1alrehablab/",
       "instagram": "https://www.instagram.com/al_rehab_lab",
-      "youtube": "https://www.youtube.com/@1alrehablab"
+      "youtube": "https://www.youtube.com/channel/UCFv77dqwuvqOTQrQ5Azndsw"
     },
     "branches": [
       {
@@ -1197,7 +1197,7 @@
       "en": "Hello, I would like to book a home sample collection with AL Rehab Lab. Required tests:"
     },
     "visit.waMsg": {
-      "ar": "السلام عليكم، عايز أستفسر عن خدمة السحب المنزلي والمواعيد المتاحة.",
+      "ar": "السلام عليكم\n عايز أستفسر عن خدمة السحب المنزلي والمواعيد المتاحة ؟",
       "en": "Hello, I would like to ask about home sample collection and available times."
     },
     "visit.ok": {
@@ -1205,7 +1205,7 @@
       "en": "Your visit request is ready in WhatsApp — press send there."
     },
     "fb.waMsg": {
-      "ar": "السلام عليكم، عندي استفسار عن التحاليل والأسعار.",
+      "ar": "السلام عليكم\nعندي استفسار عن التحاليل والاسعار ؟",
       "en": "Hello, I have a question about tests and prices."
     }
   },
@@ -1797,5 +1797,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:13:49.619Z"
+  "updatedAt": "2026-10-31T18:20:13.458Z"
 }
