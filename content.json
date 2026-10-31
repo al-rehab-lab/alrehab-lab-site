@@ -43,17 +43,17 @@
     ],
     "stats": [
       {
-        "value": "+25",
+        "value": "+26",
         "ar": "سنة خبرة في التحاليل الطبية",
         "en": "Years of lab experience"
       },
       {
-        "value": "+120",
+        "value": "+541",
         "ar": "نوع تحليل متاح",
         "en": "Test types available"
       },
       {
-        "value": "+45",
+        "value": "+34",
         "ar": "جهة وشركة متعاقدة",
         "en": "Corporate partners"
       }
@@ -217,12 +217,12 @@
       "en": "More"
     },
     "top.tagline": {
-      "ar": "دقة متناهية في التشخيص.. وعناية فائقة بصحتك",
-      "en": "Precision diagnostics with exceptional care"
+      "ar": "خدمة معملية كاملة من أول التحليل لحد النتيجة - صحتك تاجك",
+      "en": "A complete laboratory service, from initial analysis to final results—your health is your greatest asset."
     },
     "top.trusted": {
-      "ar": "معامل معتمدة — نتائج موثوقة",
-      "en": "Accredited lab — trusted results"
+      "ar": "معمل معتمد — نتائج موثوقة",
+      "en": "Accredited laboratory — reliable results"
     },
     "footer.desc": {
       "ar": "معامل الرحاب للتحاليل الطبية: دقة في النتائج، تعقيم كامل، وفريق تمريض متخصص لسحب العينات في المعمل أو على باب منزلك.",
@@ -273,7 +273,7 @@
       "en": "Follow us"
     },
     "home.badge": {
-      "ar": "معامل تحاليل طبية معتمد — العاشر من رمضان  - بلبيس - الشرقية",
+      "ar": "معمل تحاليل طبية معتمد — الشرقية",
       "en": "Accredited medical lab — Sharqia"
     },
     "home.title1": {
@@ -1798,5 +1798,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:37:22.916Z"
+  "updatedAt": "2026-10-31T18:42:09.934Z"
 }
