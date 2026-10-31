@@ -1218,7 +1218,7 @@
       "ruleAr": "لا يتطلب صيام — يمكن إجراؤه في أي وقت",
       "ruleEn": "No fasting needed",
       "icon": "🩸",
-      "price": "150"
+      "price": ""
     },
     {
       "id": 2,
@@ -1238,7 +1238,7 @@
       "ruleAr": "لا يتطلب صيام — يعكس متوسط السكر لـ 3 شهور",
       "ruleEn": "No fasting — reflects 3-month average",
       "icon": "📊",
-      "price": "120"
+      "price": ""
     },
     {
       "id": 4,
@@ -1248,7 +1248,7 @@
       "ruleAr": "لا يتطلب صيام — يُفضل معه تسجيل وقت آخر وجبة",
       "ruleEn": "No fasting — note last meal time",
       "icon": "🍬",
-      "price": "60"
+      "price": ""
     },
     {
       "id": 5,
@@ -1268,7 +1268,7 @@
       "ruleAr": "صيام 6 – 8 ساعات",
       "ruleEn": "Fast 6–8 hours",
       "icon": "🫀",
-      "price": "250"
+      "price": ""
     },
     {
       "id": 7,
@@ -1797,5 +1797,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:22:54.842Z"
+  "updatedAt": "2026-10-31T18:24:04.027Z"
 }
