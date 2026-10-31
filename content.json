@@ -1689,7 +1689,8 @@
       "detailAr": "خصم للحاملين للكارنيه والبطاقات الرسمية الخاصة بالجهاز.",
       "detailEn": "Special discount for employees with an official authority ID.",
       "discount": "10%",
-      "mark": "🏛️"
+      "mark": "🏛️",
+      "logo": ""
     },
     {
       "id": 2,
@@ -1796,5 +1797,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T12:57:00.787Z"
+  "updatedAt": "2026-10-31T18:13:49.619Z"
 }
