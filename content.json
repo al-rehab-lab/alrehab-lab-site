@@ -1704,13 +1704,14 @@
     },
     {
       "id": 3,
-      "ar": "نادي العاشر من رمضان الرياضي",
+      "ar": "نادي الرواد بالعاشر من رمضان",
       "en": "10th of Ramadan Sports Club",
       "group": "club",
-      "detailAr": "خصم 25% للأعضاء والارساليات الرياضية والفحوصات الدورية.",
+      "detailAr": "خصم 25% للأعضاء واسرهم .",
       "detailEn": "25% off for members plus athletic periodic panels.",
       "discount": "25%",
-      "mark": "⚽"
+      "mark": "⚽",
+      "logo": "assets/uploads/image_ab720bc0.jpg"
     },
     {
       "id": 4,
@@ -1798,5 +1799,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T18:45:20.415Z"
+  "updatedAt": "2026-10-31T18:48:57.437Z"
 }
