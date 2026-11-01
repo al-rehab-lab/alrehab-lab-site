@@ -212,6 +212,14 @@ html[data-theme="dark"] .eyebrow--ok { color: #66DDAF; }
   .site-header { background: var(--card); }
 }
 .site-header.is-stuck { box-shadow: var(--sh-2); }
+/* كانفس أنيميشن الهيدر (ذرات كيميائية متحركة + قطرات دم) */
+.site-header .header-fx { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.header__in { position: relative; z-index: 1; }
+/* تفتيح منتصف صورة الهيرو خلف الشعار حتى يظهر بوضوح فوقها */
+.hero__bg::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.90) 0%, rgba(255,255,255,.66) 36%, rgba(255,255,255,.18) 60%, rgba(255,255,255,0) 76%);
+}
 .header__in { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: var(--header-h); }
 
 .brand { display: flex; align-items: center; gap: 11px; }
@@ -339,7 +347,12 @@ html[dir="ltr"] .drawer__panel { transform: translateX(-110%); }
   display: grid; place-items: center;
   box-shadow: inset 0 0 70px rgba(255,255,255,.10), 0 30px 70px rgba(0,0,0,.28);
 }
-.hero__art-inner img { width: 74%; filter: drop-shadow(0 18px 34px rgba(0,0,0,.35)); }
+.hero__bg {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: url('../assets/hero-lab-bg.jpg') center/cover no-repeat #fff;
+  box-shadow: inset 0 0 0 1px rgba(11,37,69,.05), inset 0 -26px 54px rgba(11,37,69,.12);
+}
+.hero__art-inner img { width: 63%; position: relative; z-index: 1; filter: drop-shadow(0 18px 34px rgba(0,0,0,.35)); }
 .hero__ring { position: absolute; inset: -14px; border-radius: 50%; border: 1.5px dashed rgba(255,255,255,.28); animation: spin 34s linear infinite; }
 .hero__pill {
   position: absolute; display: flex; align-items: center; gap: 8px;
