@@ -1009,6 +1009,17 @@
     initVisitForm();
     initMisc();
 
+    // تصحيح موضع روابط الأقسام (#...) بعد بناء المحتوى الديناميكي،
+    // حتى تهبط الصفحة على القسم المطلوب بدقة (روابط المشاركة المباشرة)
+    const fixHashLanding = () => {
+      if (!location.hash) return;
+      let target = null;
+      try { target = document.querySelector(location.hash); } catch (e) { /* تجاهل */ }
+      if (target) target.scrollIntoView();
+    };
+    fixHashLanding();
+    window.addEventListener('load', () => setTimeout(fixHashLanding, 60));
+
     // language & theme buttons
     $$('[data-lang-toggle]').forEach(b => b.addEventListener('click', () => {
       setLanguage(lang === 'ar' ? 'en' : 'ar');
