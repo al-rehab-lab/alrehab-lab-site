@@ -233,8 +233,9 @@
       ['nameAr', 'اسم المعمل (عربي)'], ['nameEn', 'اسم المعمل (إنجليزي)'],
       ['fullAr', 'الاسم الكامل (عربي)'], ['fullEn', 'الاسم الكامل (إنجليزي)'],
       ['phone', 'رقم واتساب/الهاتف (صيغة دولية بدون +)'], ['phoneDisplay', 'شكل الرقم الظاهر'],
-      ['landline', 'رقم الأرضي (اختياري)'], ['email', 'البريد الإلكتروني'],
-      ['replyTime', 'وقت الرد على الرسائل'], ['hours', 'مواعيد العمل']
+      ['sandanhourPhone', 'رقم واتساب فرع سندنهور (زر «تواصل مع فرع سندنهور»)'], ['landline', 'رقم الأرضي (اختياري)'],
+      ['email', 'البريد الإلكتروني'], ['replyTime', 'وقت الرد على الرسائل'],
+      ['hours', 'مواعيد العمل']
     ];
     const socials = cfg.socials || {};
     $('#generalForm').innerHTML = `
@@ -258,6 +259,8 @@
           <textarea class="ta" data-i18n-key="fb.waMsg" style="min-height:70px">${esc((content.i18n['fb.waMsg'] || {}).ar || '')}</textarea></label>
         <label class="f"><span class="lbl">رسالة طلب زيارة منزلية</span>
           <textarea class="ta" data-i18n-key="visit.waMsg" style="min-height:70px">${esc((content.i18n['visit.waMsg'] || {}).ar || '')}</textarea></label>
+        <label class="f"><span class="lbl">رسالة فرع سندنهور</span>
+          <textarea class="ta" data-i18n-key="sandanhour.waMsg" style="min-height:70px">${esc((content.i18n['sandanhour.waMsg'] || {}).ar || '')}</textarea></label>
       </div>
 
       <h4 style="margin:18px 0 10px;font-size:13px">الفروع</h4>
@@ -331,13 +334,14 @@
     const groups = {
       'الهيدر والفوتر': keys.filter(k => /^(nav|top|brand|footer)\./.test(k)),
       'الرئيسية': keys.filter(k => /^home\.|^trust\.|^cta\./.test(k)),
+      'قسم أهل سندنهور (الرئيسية)': keys.filter(k => /^sandanhour\./.test(k)),
       'دليل التحاليل': keys.filter(k => /^tests\./.test(k)),
       'السحب المنزلي': keys.filter(k => /^visit\./.test(k)),
       'التوعية': keys.filter(k => /^gallery\./.test(k)),
       'النصائح': keys.filter(k => /^tips\./.test(k)),
       'التعاقدات': keys.filter(k => /^contracts\./.test(k)),
       'التواصل': keys.filter(k => /^(contact|fb)\./.test(k)),
-      'أخرى': keys.filter(k => !/^(nav|top|brand|footer|home|trust|cta|tests|visit|gallery|tips|contracts|contact|fb)\./.test(k))
+      'أخرى': keys.filter(k => !/^(nav|top|brand|footer|home|sandanhour|trust|cta|tests|visit|gallery|tips|contracts|contact|fb)\./.test(k))
     };
     const q = textFilter.trim().toLowerCase();
     const render = (list) => list.filter(k => {
