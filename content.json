@@ -169,8 +169,8 @@
       "en": "Skip to content"
     },
     "common.egp": {
-      "ar": "ج.م",
-      "en": "EGP"
+      "ar": "",
+      "en": ""
     },
     "common.priceFrom": {
       "ar": "",
@@ -1799,5 +1799,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-01T11:24:20.752Z"
+  "updatedAt": "2026-11-01T11:24:59.251Z"
 }
