@@ -169,12 +169,12 @@
       "en": "Skip to content"
     },
     "common.egp": {
-      "ar": "",
-      "en": ""
+      "ar": "ㅤ",
+      "en": "ㅤ"
     },
     "common.priceFrom": {
-      "ar": "",
-      "en": ""
+      "ar": "ㅤ",
+      "en": "ㅤ"
     },
     "common.openMap": {
       "ar": "فتح الخريطة",
@@ -1799,5 +1799,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-01T11:24:59.251Z"
+  "updatedAt": "2026-11-01T11:49:19.754Z"
 }
