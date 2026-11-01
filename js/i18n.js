@@ -116,6 +116,22 @@ LAB.i18n = {
   'home.step4': { ar: 'استلام النتيجة', en: 'Receive results' },
   'home.step4d': { ar: 'نتائجك جاهزة خلال 24 ساعة غالباً، مع شرح مبسط عند الحاجة.', en: 'Usually ready within 24 hours, with a simple explanation on request.' },
 
+  /* ---------- رسالة أهل سندنهور (الرئيسية) ---------- */
+  'sandanhour.badge': { ar: 'أهل بلدنا سندنهور', en: 'Our people in Sandanhour' },
+  'sandanhour.title': { ar: 'أهل سندنهور... صحتكم غالية علينا', en: 'People of Sandanhour… your health is precious to us' },
+  'sandanhour.desc': { ar: 'إحنا مش مجرد فرع قريب منكم؛ إحنا جزء من البلد وأهلها. من أول سؤال عن شروط التحليل لحد استلام النتيجة، هدفنا إن كل مريض في سندنهور يحس إنه معروف ومطمن ومتابع خطوة بخطوة.', en: 'We are not just a branch near you — we are part of this town and its people. From your first question about test requirements to receiving your results, our goal is that every patient in Sandanhour feels known, reassured and followed up step by step.' },
+  'sandanhour.c1.title': { ar: 'قريب من بيتك', en: 'Close to home' },
+  'sandanhour.c1.desc': { ar: 'فرع سندنهور أمام الوحدة الصحية، عشان توصلنا بسهولة من غير مشوار طويل ولا تعب.', en: 'The Sandanhour branch is right in front of the health unit, so you can reach us easily — no long trips, no hassle.' },
+  'sandanhour.c2.title': { ar: 'سحب منزلي داخل البلد', en: 'Home collection in town' },
+  'sandanhour.c2.desc': { ar: 'زيارات سحب منزلي داخل سندنهور وما حولها لكبار السن والأطفال والحالات الخاصة، بالحجز على واتساب أو التليفون.', en: 'Home blood-collection visits across Sandanhour and nearby areas for the elderly, children and special cases — book on WhatsApp or by phone.' },
+  'sandanhour.c3.title': { ar: 'متابعة واطمئنان', en: 'Follow-up & peace of mind' },
+  'sandanhour.c3.desc': { ar: 'بنوضح شروط الصيام والتحضير قبل السحب، ونبلغك بموعد النتيجة بوضوح من غير لف ودوران.', en: 'We explain fasting and preparation instructions before collection, and tell you exactly when your results will be ready — clearly, with no runaround.' },
+  'sandanhour.c4.title': { ar: 'رعاية من القلب', en: 'Care from the heart' },
+  'sandanhour.c4.desc': { ar: 'تعامل هادي وصبور مع أطفالنا وكبار السن، وسرية تامة لنتائج كل مريض.', en: 'Calm, patient care for our children and the elderly, with complete confidentiality of results for every patient.' },
+  'sandanhour.callNow': { ar: 'تواصل مع فرع سندنهور', en: 'Contact Sandanhour branch' },
+  'sandanhour.landlineLabel': { ar: 'الهاتف الأرضي', en: 'Landline' },
+  'sandanhour.waMsg': { ar: 'السلام عليكم، أنا من سندنهور وعايز أستفسر عن التحاليل والحجز في فرع سندنهور.', en: 'Hello, I am from Sandanhour and I would like to ask about tests and booking at the Sandanhour branch.' },
+
   'home.corpBadge': { ar: 'للشركات والجهات', en: 'For companies & bodies' },
   'home.corpTitle': { ar: 'تعاقدات وخصومات تصل إلى 25%', en: 'Contracts and discounts up to 25%' },
   'home.corpDesc': { ar: 'نتعاقد مع الجهات الحكومية، مصانع المنطقة الصناعية، والنوادي الرياضية لتقديم فحوصات دورية وخصومات للعاملين وأسرهم.', en: 'We work with government bodies, industrial-zone factories and sports clubs to provide periodic screening and staff discounts.' },

@@ -130,6 +130,174 @@
       const span = el.querySelector('[data-email-label]');
       if (span) span.textContent = CFG.email;
     });
+    // قسم سندنهور: واتساب برقم خاص بالفرع + خريطة الفرع + الهاتف الأرضي
+    $$('[data-wa-sandanhour]').forEach(el => {
+      const num = String(CFG.sandanhourPhone || CFG.phone || '').replace(/\D/g, '');
+      const msg = t('sandanhour.waMsg', '');
+      el.href = 'https://wa.me/' + num + (msg ? '?text=' + encodeURIComponent(msg) : '');
+      el.target = '_blank';
+      el.rel = 'noopener';
+    });
+    $$('[data-sandanhour-map]').forEach(el => {
+      const br = (CFG.branches || []).find(b => b.id === 'sandanhour');
+      if (br && br.map) el.href = br.map;
+      el.target = '_blank';
+      el.rel = 'noopener';
+    });
+    $$('[data-landline]').forEach(el => {
+      const digits = String(CFG.landline || '').replace(/\D/g, '');
+      if (!digits) { el.style.display = 'none'; return; }
+      el.href = 'tel:' + digits;
+      const span = el.querySelector('[data-landline-label]');
+      if (span) span.textContent = digits.replace(/(\d{3})(\d{3})(\d{4})$/, '$1 $2 $3');
+    });
+  }
+
+  /* ------------------------------------------------------------------ *
+   * أنيميشن الهيدر: شبكة ذرات/روابط كيميائية متحركة + قطرات دم لامعة عائمة
+   * (كانفس خفيف خلف محتوى الهيدر — يُنشأ تلقائياً في كل الصفحات)
+   * ------------------------------------------------------------------ */
+  function initHeaderFx() {
+    const header = $('.site-header');
+    if (!header || header.querySelector('.header-fx')) return;
+
+    const canvas = document.createElement('canvas');
+    canvas.className = 'header-fx';
+    canvas.setAttribute('aria-hidden', 'true');
+    header.insertBefore(canvas, header.firstChild);
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    const LINK = 96;
+
+    let W = 0, H = 0, atoms = [], drops = [], raf = null, last = 0, t = 0;
+
+    function palette() {
+      return document.documentElement.dataset.theme === 'dark'
+        ? { atom: 'rgba(127,208,245,', link: 'rgba(127,208,245,', drop: ['#FF5B74', '#C8102E'] }
+        : { atom: 'rgba(11,87,160,', link: 'rgba(11,87,160,', drop: ['#E63950', '#B00D26'] };
+    }
+
+    function build() {
+      const rect = header.getBoundingClientRect();
+      W = Math.max(1, Math.floor(rect.width));
+      H = Math.max(1, Math.floor(rect.height));
+      canvas.width = W * DPR;
+      canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+
+      const n = Math.round(Math.min(46, Math.max(18, (W * H) / 16000)));
+      atoms = Array.from({ length: n }, () => ({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.22, vy: (Math.random() - 0.5) * 0.16,
+        r: 1.1 + Math.random() * 1.9,
+        ph: Math.random() * Math.PI * 2
+      }));
+
+      const nd = Math.round(Math.min(7, Math.max(3, W / 260)));
+      drops = Array.from({ length: nd }, (_, i) => ({
+        x: (i + 0.5) * (W / nd) + (Math.random() - 0.5) * 60,
+        y: H * (0.25 + Math.random() * 0.5),
+        s: 3.4 + Math.random() * 3.2,
+        drift: (Math.random() - 0.5) * 0.12,
+        bobAmp: 3 + Math.random() * 5,
+        bobSpd: 0.35 + Math.random() * 0.45,
+        ph: Math.random() * Math.PI * 2,
+        a: 0.35 + Math.random() * 0.4
+      }));
+    }
+
+    function drawDrop(d, pal) {
+      const y = d.y + Math.sin(t * d.bobSpd + d.ph) * d.bobAmp;
+      const s = d.s;
+      ctx.save();
+      ctx.translate(d.x, y);
+      const g = ctx.createLinearGradient(0, -s * 1.7, 0, s);
+      g.addColorStop(0, pal.drop[0]);
+      g.addColorStop(1, pal.drop[1]);
+      ctx.globalAlpha = d.a;
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.moveTo(0, -s * 1.7);
+      ctx.bezierCurveTo(s * 0.95, -s * 0.25, s * 0.85, s * 0.35, 0, s);
+      ctx.bezierCurveTo(-s * 0.85, s * 0.35, -s * 0.95, -s * 0.25, 0, -s * 1.7);
+      ctx.fill();
+      // لمعة القطرة
+      ctx.globalAlpha = d.a * 0.85;
+      ctx.fillStyle = 'rgba(255,255,255,.9)';
+      ctx.beginPath();
+      ctx.ellipse(-s * 0.28, -s * 0.05, s * 0.16, s * 0.3, -0.35, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function step(ts) {
+      raf = requestAnimationFrame(step);
+      const dt = Math.min(0.05, last ? (ts - last) / 1000 : 0.016);
+      last = ts;
+      t += dt;
+      const pal = palette();
+      ctx.clearRect(0, 0, W, H);
+
+      // حركة الذرات + الروابط بينها
+      for (let i = 0; i < atoms.length; i++) {
+        const a = atoms[i];
+        a.x += (a.vx + Math.sin(t * 0.5 + a.ph) * 0.05) * dt * 60;
+        a.y += (a.vy + Math.cos(t * 0.4 + a.ph) * 0.04) * dt * 60;
+        if (a.x < -8) a.x = W + 8; if (a.x > W + 8) a.x = -8;
+        if (a.y < -8) a.y = H + 8; if (a.y > H + 8) a.y = -8;
+        for (let j = i + 1; j < atoms.length; j++) {
+          const b = atoms[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const d2 = dx * dx + dy * dy;
+          if (d2 < LINK * LINK) {
+            ctx.strokeStyle = pal.link + ((1 - Math.sqrt(d2) / LINK) * 0.35).toFixed(3) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+      }
+      // رسم الذرات مع نبض خفيف
+      atoms.forEach(a => {
+        const tw = 0.55 + 0.45 * Math.sin(t * 1.4 + a.ph);
+        ctx.fillStyle = pal.atom + (0.5 * tw).toFixed(3) + ')';
+        ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
+        if (a.r > 2.2) {
+          ctx.fillStyle = 'rgba(255,255,255,.55)';
+          ctx.beginPath(); ctx.arc(a.x - a.r * 0.3, a.y - a.r * 0.3, a.r * 0.35, 0, Math.PI * 2); ctx.fill();
+        }
+      });
+      // قطرات الدم العائمة
+      drops.forEach(d => {
+        d.x += d.drift * dt * 60;
+        if (d.x < -16) d.x = W + 16; if (d.x > W + 16) d.x = -16;
+        drawDrop(d, pal);
+      });
+    }
+
+    function start() { if (!raf && !reduced) { last = 0; raf = requestAnimationFrame(step); } }
+    function stop() { if (raf) cancelAnimationFrame(raf); raf = null; }
+
+    build();
+    if (reduced) {
+      t = 1;
+      const pal = palette();
+      ctx.clearRect(0, 0, W, H);
+      atoms.forEach(a => { ctx.fillStyle = pal.atom + '0.4)'; ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill(); });
+      drops.forEach(d => drawDrop(d, pal));
+      return;
+    }
+    start();
+
+    let rz;
+    window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(build, 180); }, { passive: true });
+    document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? start() : stop())).observe(header);
+    }
   }
 
   /* ------------------------------------------------------------------ *
@@ -828,6 +996,7 @@
     applyLanguage();
     hydrateLinks();
     initChrome();
+    initHeaderFx();
     initReveal();
     initTests();
     initGallery();
