@@ -301,6 +301,110 @@
   }
 
   /* ------------------------------------------------------------------ *
+   * أنيميشن خلفية الهيرو: ذرات مترابطة وقطرات دم لامعة
+   * ------------------------------------------------------------------ */
+  function initParticleBackdrop(host, canvasClass) {
+    if (!host || host.querySelector('.' + canvasClass)) return;
+
+    const canvas = document.createElement('canvas');
+    canvas.className = canvasClass;
+    canvas.setAttribute('aria-hidden', 'true');
+    host.insertBefore(canvas, host.firstChild);
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    let W = 0, H = 0, atoms = [], drops = [], raf = 0, last = 0, time = 0;
+    const linkDist = 142;
+
+    function build() {
+      const r = host.getBoundingClientRect();
+      W = Math.max(1, Math.round(r.width));
+      H = Math.max(1, Math.round(r.height));
+      canvas.width = Math.round(W * DPR);
+      canvas.height = Math.round(H * DPR);
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      const mobile = W < 680;
+      const count = Math.round(Math.min(mobile ? 34 : 62, Math.max(mobile ? 20 : 34, W * H / 19000)));
+      atoms = Array.from({length: count}, () => ({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - .5) * .24, vy: (Math.random() - .5) * .20,
+        r: 1.2 + Math.random() * 2.1, phase: Math.random() * Math.PI * 2
+      }));
+      const n = mobile ? 6 : 11;
+      drops = Array.from({length:n}, (_,i) => ({
+        x: (i + .5) * W / n + (Math.random() - .5) * 48,
+        y: H * (.12 + Math.random() * .76),
+        size: 5 + Math.random() * 5.5,
+        vx: (Math.random() - .5) * .12,
+        bob: 4 + Math.random() * 9,
+        speed: .35 + Math.random() * .5,
+        phase: Math.random() * Math.PI * 2,
+        alpha: .48 + Math.random() * .32
+      }));
+    }
+
+    function drawDrop(d) {
+      const y = d.y + Math.sin(time * d.speed + d.phase) * d.bob;
+      const s = d.size;
+      ctx.save(); ctx.translate(d.x, y);
+      const g = ctx.createLinearGradient(-s*.45, -s*1.6, s*.3, s);
+      g.addColorStop(0, '#ff8494'); g.addColorStop(.38, '#f32849'); g.addColorStop(1, '#9e0925');
+      ctx.globalAlpha = d.alpha;
+      ctx.shadowColor = 'rgba(245,28,62,.45)'; ctx.shadowBlur = s * 1.2;
+      ctx.fillStyle = g; ctx.beginPath();
+      ctx.moveTo(0, -s * 1.8);
+      ctx.bezierCurveTo(s*.92, -s*.35, s*.88, s*.42, 0, s);
+      ctx.bezierCurveTo(-s*.88, s*.42, -s*.92, -s*.35, 0, -s*1.8);
+      ctx.fill();
+      ctx.shadowBlur = 0; ctx.globalAlpha = d.alpha * .9;
+      ctx.fillStyle = 'rgba(255,255,255,.94)'; ctx.beginPath();
+      ctx.ellipse(-s*.28, -s*.08, s*.16, s*.36, -.35, 0, Math.PI*2); ctx.fill();
+      ctx.restore();
+    }
+
+    function draw(ts) {
+      raf = requestAnimationFrame(draw);
+      const dt = Math.min(.05, last ? (ts-last)/1000 : .016);
+      last = ts; time += dt;
+      ctx.clearRect(0,0,W,H);
+      for (let i=0;i<atoms.length;i++) {
+        const a=atoms[i];
+        a.x += (a.vx + Math.sin(time*.42+a.phase)*.045)*dt*60;
+        a.y += (a.vy + Math.cos(time*.37+a.phase)*.04)*dt*60;
+        if (a.x < -10) a.x=W+10; if (a.x>W+10) a.x=-10;
+        if (a.y < -10) a.y=H+10; if (a.y>H+10) a.y=-10;
+        for (let j=i+1;j<atoms.length;j++) {
+          const b=atoms[j], dx=a.x-b.x, dy=a.y-b.y, dist=Math.hypot(dx,dy);
+          if (dist<linkDist) {
+            const opacity=(1-dist/linkDist)*.22;
+            ctx.strokeStyle=`rgba(178,231,255,${opacity.toFixed(3)})`;
+            ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+          }
+        }
+      }
+      atoms.forEach(a=>{
+        const pulse=.65+.35*Math.sin(time*1.6+a.phase);
+        ctx.fillStyle=`rgba(213,245,255,${(.58*pulse).toFixed(3)})`;
+        ctx.beginPath(); ctx.arc(a.x,a.y,a.r,0,Math.PI*2); ctx.fill();
+        if(a.r>2.5){ctx.fillStyle='rgba(255,255,255,.82)';ctx.beginPath();ctx.arc(a.x-a.r*.25,a.y-a.r*.28,a.r*.34,0,Math.PI*2);ctx.fill();}
+      });
+      drops.forEach(d=>{d.x+=d.vx*dt*60;if(d.x<-20)d.x=W+20;if(d.x>W+20)d.x=-20;drawDrop(d);});
+    }
+
+    function stop(){ if(raf) cancelAnimationFrame(raf); raf=0; }
+    function start(){ if(!raf && !reduced){last=0;raf=requestAnimationFrame(draw);} }
+    build();
+    if(reduced){time=1;atoms.forEach(a=>{ctx.fillStyle='rgba(213,245,255,.5)';ctx.beginPath();ctx.arc(a.x,a.y,a.r,0,Math.PI*2);ctx.fill();});drops.forEach(drawDrop);return;}
+    start();
+    let resizeTimer;
+    window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(build,180);},{passive:true});
+    document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
+    if('IntersectionObserver' in window)new IntersectionObserver(entries=>entries.forEach(e=>e.isIntersecting?start():stop())).observe(host);
+  }
+
+  /* ------------------------------------------------------------------ *
    * Header / drawer / scroll
    * ------------------------------------------------------------------ */
   function initChrome() {
@@ -997,6 +1101,8 @@
     hydrateLinks();
     initChrome();
     initHeaderFx();
+    initParticleBackdrop($('.hero'), 'hero-fx');
+    initParticleBackdrop($('.site-footer'), 'footer-fx');
     initReveal();
     initTests();
     initGallery();
