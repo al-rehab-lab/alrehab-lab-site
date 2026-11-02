@@ -377,24 +377,6 @@ html[dir="ltr"] .drawer__panel { transform: translateX(-110%); }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 
-/* التاج فوق الشعار (مستخرج من slogan.png) */
-.hero__art-inner .hero__crown {
-  position: absolute; z-index: 2; pointer-events: none;
-  width: 18%; height: auto; left: 29%; top: 10%;
-  transform-origin: 50% 92%;
-  filter: drop-shadow(0 8px 14px rgba(160, 10, 35, .35));
-  animation: crown-in .95s cubic-bezier(.22, 1.2, .36, 1) .45s both, crown-sway 5.5s ease-in-out 1.65s infinite;
-}
-@keyframes crown-in {
-  0% { opacity: 0; transform: translateY(-30px) rotate(-50deg) scale(.55); }
-  55% { opacity: 1; transform: translateY(2px) rotate(-19deg) scale(1.06); }
-  75% { transform: translateY(-3px) rotate(-27deg) scale(.98); }
-  100% { opacity: 1; transform: translateY(0) rotate(-23deg) scale(1); }
-}
-@keyframes crown-sway {
-  0%, 100% { transform: translateY(0) rotate(-23deg); }
-  50% { transform: translateY(-4px) rotate(-19deg); }
-}
 @keyframes slogan-in {
   from { opacity: 0; transform: translateY(16px); filter: brightness(0) invert(1) blur(7px) drop-shadow(0 6px 16px rgba(0,0,0,.25)); }
   to { opacity: .96; transform: translateY(0); filter: brightness(0) invert(1) blur(0) drop-shadow(0 6px 16px rgba(0,0,0,.25)); }
