@@ -377,7 +377,7 @@ html[dir="ltr"] .drawer__panel { transform: translateX(-110%); }
 /* التاج فوق الشعار (مستخرج من slogan.png) */
 .hero__art-inner .hero__crown {
   position: absolute; z-index: 2; pointer-events: none;
-  width: 20%; height: auto; left: 16%; top: 4%;
+  width: 20%; height: auto; left: 25%; top: 13%;
   transform-origin: 50% 92%;
   filter: drop-shadow(0 8px 14px rgba(160, 10, 35, .35));
   animation: crown-in .95s cubic-bezier(.22, 1.2, .36, 1) .45s both, crown-sway 5.5s ease-in-out 1.65s infinite;
