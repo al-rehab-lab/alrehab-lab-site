@@ -10,6 +10,7 @@
   const media = window.Media = {
     picker: null,
     target: null,
+    recentUploads: [],
 
     /** يفتح منتقي الصور. callback(path) */
     open(callback) {
@@ -104,7 +105,7 @@
       const grid = this.ensure().querySelector('[data-media-grid]');
       grid.innerHTML = '<p class="media-empty">جارٍ تحميل الصور…</p>';
       try {
-        const dirs = ['assets/posters', 'assets', 'assets/contracts'];
+        const dirs = ['assets/posters', 'assets/uploads', 'assets', 'assets/contracts'];
         const found = [];
         for (const dir of dirs) {
           try {
@@ -114,15 +115,22 @@
               .forEach(i => found.push({ path: i.path, name: i.name }));
           } catch (_) { /* المجلد غير موجود */ }
         }
-        if (!found.length) {
+        const merged = new Map(found.map(f => [f.path, f]));
+        this.recentUploads.forEach(f => merged.set(f.path, f));
+        const images = Array.from(merged.values());
+        if (!images.length) {
           grid.innerHTML = '<p class="media-empty">لا توجد صور. ارفع صورة جديدة من الزر أعلى.</p>';
           return;
         }
-        grid.innerHTML = found.map(f => `
-          <button type="button" class="media-cell" data-media-pick="${f.path}" title="${f.path}">
-            <img src="../${f.path}" alt="${f.name}" loading="lazy" onerror="this.style.opacity=.25">
-            <span>${f.name}</span>
-          </button>`).join('');
+        const safe = value => String(value).replace(/[&<>\"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;', "'": '&#39;' }[c]));
+        grid.innerHTML = images.map(f => {
+          const src = f.path.split('/').map(encodeURIComponent).join('/');
+          return `
+          <button type="button" class="media-cell" data-media-pick="${safe(f.path)}" title="${safe(f.path)}">
+            <img src="${src}" alt="${safe(f.name)}" loading="lazy" onerror="this.style.opacity=.25">
+            <span>${safe(f.name)}</span>
+          </button>`;
+        }).join('');
       } catch (err) {
         grid.innerHTML = `<p class="media-empty">تعذّر تحميل المكتبة (${err.message}).<br>تأكد من إعدادات GitHub ثم أعد المحاولة.</p>`;
       }
@@ -141,7 +149,9 @@
       const path = `assets/uploads/${Date.now()}-${safe}.${ext}`;
       this.status('جارٍ رفع ' + file.name + '…');
       await gh.putBinary(path, base64, 'رفع صورة: ' + file.name);
-      this.status('تم رفع الصورة ✓');
+      this.recentUploads = this.recentUploads.filter(item => item.path !== path);
+      this.recentUploads.unshift({ path, name: path.split('/').pop() });
+      this.status('تم رفع الصورة ✓ — هتظهر ضمن الصور المتاحة للاختيار');
       return path;
     }
   };
