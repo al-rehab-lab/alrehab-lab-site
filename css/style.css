@@ -64,6 +64,20 @@ html[data-theme="dark"] {
   --sh-3: 0 22px 54px rgba(0, 0, 0, .55);
 }
 
+/* انتقالات الصفحات بين الروابط الداخلية — كشف دائري مستوحى من عدسة المعمل */
+@view-transition { navigation: auto; }
+::view-transition-group(root) { animation-duration: .56s; }
+::view-transition-image-pair(root) { isolation: isolate; }
+::view-transition-old(root) { animation: lab-page-out .18s ease both; }
+::view-transition-new(root) { animation: lab-page-reveal .56s cubic-bezier(.2,.78,.22,1) both; }
+@keyframes lab-page-out {
+  to { opacity: 0; filter: blur(3px); transform: scale(1.008); }
+}
+@keyframes lab-page-reveal {
+  from { opacity: .72; filter: blur(5px); clip-path: circle(0% at 50% 48%); }
+  to { opacity: 1; filter: blur(0); clip-path: circle(150% at 50% 48%); }
+}
+
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
