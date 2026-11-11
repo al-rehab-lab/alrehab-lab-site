@@ -1345,7 +1345,7 @@
       "ruleAr": "صيام 9 – 12 ساعة ضروري",
       "ruleEn": "Fast 9–12 hours (required)",
       "icon": "🥑",
-      "price": "180"
+      "price": ""
     },
     {
       "id": 9,
@@ -1355,7 +1355,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "☀️",
-      "price": "350"
+      "price": ""
     },
     {
       "id": 10,
@@ -1365,7 +1365,7 @@
       "ruleAr": "صيام 2 – 4 ساعات مستحسن",
       "ruleEn": "Preferred fast 2–4 hours",
       "icon": "⚡",
-      "price": "280"
+      "price": ""
     },
     {
       "id": 11,
@@ -1375,7 +1375,7 @@
       "ruleAr": "يُفضل السحب صباحاً وبعد صيام 8 ساعات",
       "ruleEn": "Morning sample, prefer 8h fast",
       "icon": "🧲",
-      "price": "300"
+      "price": ""
     },
     {
       "id": 12,
@@ -1385,7 +1385,7 @@
       "ruleAr": "لا يتطلب صيام — يُفضل صباحاً قبل جرعة العلاج",
       "ruleEn": "No fasting — morning, before medication",
       "icon": "🦋",
-      "price": "280"
+      "price": ""
     },
     {
       "id": 13,
@@ -1395,7 +1395,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "🤰",
-      "price": "120"
+      "price": ""
     },
     {
       "id": 14,
@@ -1405,7 +1405,7 @@
       "ruleAr": "يُفضل السحب صباحاً بين 8 – 10 صباحاً",
       "ruleEn": "Morning sample 8–10 AM",
       "icon": "⚗️",
-      "price": "320"
+      "price": ""
     },
     {
       "id": 15,
@@ -1415,7 +1415,7 @@
       "ruleAr": "صيام 3 ساعات وتجنب الإجهاد قبل السحب",
       "ruleEn": "Fast 3h, avoid stress",
       "icon": "🧬",
-      "price": "250"
+      "price": ""
     },
     {
       "id": 16,
@@ -1425,7 +1425,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "💗",
-      "price": "240"
+      "price": ""
     },
     {
       "id": 17,
@@ -1435,7 +1435,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "🛡️",
-      "price": "160"
+      "price": ""
     },
     {
       "id": 18,
@@ -1445,7 +1445,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "👶",
-      "price": "330"
+      "price": ""
     },
     {
       "id": 19,
@@ -1455,7 +1455,7 @@
       "ruleAr": "صيام 6 ساعات مستحسن",
       "ruleEn": "Preferred 6h fast",
       "icon": "🦴",
-      "price": "290"
+      "price": ""
     },
     {
       "id": 20,
@@ -1465,7 +1465,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "🔬",
-      "price": "450"
+      "price": ""
     },
     {
       "id": 21,
@@ -1475,7 +1475,7 @@
       "ruleAr": "يُفضل عينة بول صباحي أول",
       "ruleEn": "Prefer first morning sample",
       "icon": "🧯",
-      "price": "70"
+      "price": ""
     },
     {
       "id": 22,
@@ -1867,5 +1867,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-11T23:34:46.383Z"
+  "updatedAt": "2026-11-11T23:40:30.190Z"
 }
