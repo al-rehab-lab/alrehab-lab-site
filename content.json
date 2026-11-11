@@ -1485,7 +1485,7 @@
       "ruleAr": "امتناع 3 – 5 أيام قبل التحليل",
       "ruleEn": "Abstain 3–5 days before",
       "icon": "🧫",
-      "price": "150"
+      "price": ""
     },
     {
       "id": 23,
@@ -1495,7 +1495,7 @@
       "ruleAr": "صيام 8 ساعات + عدم التدخين",
       "ruleEn": "Fast 8h, no smoking",
       "icon": "🚭",
-      "price": "300"
+      "price": ""
     },
     {
       "id": 24,
@@ -1505,7 +1505,7 @@
       "ruleAr": "لا يتطلب صيام",
       "ruleEn": "No fasting",
       "icon": "🧬",
-      "price": "550"
+      "price": ""
     }
   ],
   "testCategories": [
@@ -1867,5 +1867,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-11T23:16:43.961Z"
+  "updatedAt": "2026-11-11T23:34:46.383Z"
 }
