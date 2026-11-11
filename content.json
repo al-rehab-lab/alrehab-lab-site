@@ -78,7 +78,7 @@
       "en": "AL Rehab Medical Lab"
     },
     "common.hours": {
-      "ar": "يومياً 8:00 ص — 11:00 م",
+      "ar": "يومياً 9:00 ص — 11:00 م",
       "en": "Daily 8:00 AM – 11:00 PM"
     },
     "common.hoursLabel": {
@@ -1867,5 +1867,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-11T22:45:15.615Z"
+  "updatedAt": "2026-11-11T23:16:43.961Z"
 }
