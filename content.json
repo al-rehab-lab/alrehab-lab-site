@@ -1214,11 +1214,11 @@
       "en": "Our people in Sandanhour"
     },
     "sandanhour.title": {
-      "ar": "أهل سندنهور... صحتكم غالية علينا",
+      "ar": "أهل سندنهور ... صحتكم غالية علينا",
       "en": "People of Sandanhour… your health is precious to us"
     },
     "sandanhour.desc": {
-      "ar": "إحنا مش مجرد فرع قريب منكم؛ إحنا جزء من البلد وأهلها. من أول سؤال عن شروط التحليل لحد استلام النتيجة، هدفنا إن كل مريض في سندنهور يحس إنه معروف ومطمن ومتابع خطوة بخطوة.",
+      "ar": "إحنا مش مجرد فرع قريب منكم؛ إحنا جزء من البلد وأهلها. من أول سؤال عن شروط التحليل لحد استلام النتيجة، هدفنا إن كل مريض في سندنهور يحس إنه مطمن ومتابع خطوة بخطوة.",
       "en": "We are not just a branch near you — we are part of this town and its people. From your first question about test requirements to receiving your results, our goal is that every patient in Sandanhour feels known, reassured and followed up step by step."
     },
     "sandanhour.c1.title": {
@@ -1242,7 +1242,7 @@
       "en": "Follow-up & peace of mind"
     },
     "sandanhour.c3.desc": {
-      "ar": "بنوضح شروط الصيام والتحضير قبل السحب، ونبلغك بموعد النتيجة بوضوح من غير لف ودوران.",
+      "ar": "بنوضح شروط الصيام والتحضير قبل السحب، ونبلغك بموعد النتيجة بوضوح.",
       "en": "We explain fasting and preparation instructions before collection, and tell you exactly when your results will be ready — clearly, with no runaround."
     },
     "sandanhour.c4.title": {
@@ -1867,5 +1867,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-11T22:42:59.456Z"
+  "updatedAt": "2026-11-11T22:45:15.615Z"
 }
